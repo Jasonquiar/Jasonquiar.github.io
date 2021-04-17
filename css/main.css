@@ -1,3 +1,6 @@
+/* Incertamos la fuente del proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -94,9 +97,10 @@ nav .profile-link a{
 }
 
 .home-main-text{
+  font-family: 'Roboto Mono', monospace;
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing:0.5rem;
-  color: black;
+  color: white;
   text-align: center;
 } 
