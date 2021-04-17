@@ -1,6 +1,10 @@
 /* Incertamos la fuente del proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
+:root{
+  /* Colores */
+--color-principal: #47cfac;
+}
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +12,7 @@
 }
 
 body{
+  font-family: 'Roboto Mono',monospace;
   font-size: 62.5%;
   position: fixed;
   top: 0;
@@ -33,7 +38,7 @@ header .header-icons-container{
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: #47cfac;
+  background-color:var(--color-principal);
 }
 header .header-icons-container .icons{
   width: 300px;
@@ -69,6 +74,7 @@ nav .nav-logo-container img{
 nav .profile-link{
   display: flex;
   align-items: center;
+  font-size: 1rem;
   justify-content: flex-end;
   margin-right: 50px;
 }
@@ -104,3 +110,16 @@ nav .profile-link a{
   color: white;
   text-align: center;
 } 
+
+.home-main-buttom{
+  width: 10rem;
+  height: 3.5rem; 
+  background-color: var(--color-principal);
+  display: grid;
+  align-items: center;
+}
+
+.home-main-buttom a{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
