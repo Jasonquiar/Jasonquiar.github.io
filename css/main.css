@@ -1,6 +1,11 @@
-body{
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body{
+  font-size: 62.5%;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -40,7 +45,7 @@ header .header-icons-container .icons{
 
 header .icons span{
   color: white;
-  font-size: 26px;
+  font-size: 2rem;
 }
 
 nav{
@@ -69,3 +74,25 @@ nav .profile-link a{
   color: black;
   border-bottom: 1px solid black ;
 }
+
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+}
+.home-main section{
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+
+}
+
+.home-main-text{
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing:0.5rem;
+  color: black;
+  text-align: center;
+} 
