@@ -286,21 +286,21 @@ footer p{
 .profile-main-container .profile-container{
   display: flex;
 }
-.profile-main-proyects {
+.profile-main-proects {
   padding: 0 50px 40px;
 
 }
 
-.profile-main-proyects h3 {
+.profile-main-projects h3 {
   border-bottom:  1px solid var(--negro-claro);
   padding-bottom: 35px;
   text-align: center;
 }
 
-.proyect-main-container{
+.project-main-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.proyect-container{
+.project-container{
   padding:0 5px;
 }
