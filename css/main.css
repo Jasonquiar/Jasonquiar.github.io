@@ -16,6 +16,9 @@
 body{
   font-family: 'Roboto Mono',monospace;
   font-size: 62.5%;
+}
+
+.home-body {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -130,16 +133,18 @@ nav .profile-link a{
   background-color: var(--gris-claro);
   padding: 0px 50px 40px;
 }
+
 .blogs-main-new{
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr ;
 }
+
 .blogs-news-img-container{
   grid-column: 1;
 }
 .blogs-news-img-container img{
-
+  width: 85%;
 }
 
 .blogs-news-info-container{
@@ -149,3 +154,15 @@ nav .profile-link a{
 .blog-news-info-container p{.
   margin-bottom: 35px;
 }
+
+.blogs-posts-container{
+  padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3{
+  border-bottom: 1px solid var(--gris-claro);
+  padding-bottom: 20px;
+  text-align: center;
+  
+}
+
