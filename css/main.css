@@ -217,3 +217,57 @@ footer p{
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+.blogpost-img-container{
+  padding:0 50px 40px;
+}
+
+.blogpost-img-container img{
+  width: 100%;
+}
+
+.blogpost-main-container{
+  padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3{
+  border-bottom: 1px solid var(--negro-claro);
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.blogpost-main-container article h1{
+  font-size: 1rem;
+}
+
+.contact-main-container {
+  width:100% ;
+  min-height: 250px;
+  background-color: var(--gris-claro);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact-main-container div{
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
+}
+
+.contact-main-container div a{
+  border-bottom: 1px solid var(--negro-claro);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-main-container div p{
+  margin-top: 15px ;
+}
+
+.contact-main-container .contact-left, .contact-right{
+  text-align: initial;
+  margin-top: 85px;
+}
+.contact-main-container img{
+  width: 100px;
+}
