@@ -4,6 +4,7 @@
 :root{
   /* Colores */
 --color-principal: #47cfac;
+--gris-claro: #e6e9ed
 }
 
 *{
@@ -111,16 +112,40 @@ nav .profile-link a{
   color: white;
   text-align: center;
 } 
-
 .home-main-buttom{
   width: 10rem;
   height: 3.5rem; 
   background-color: var(--color-principal);
   display: grid;
   align-items: center;
-}
-
-.home-main-buttom a{
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.blogs-main{
+  display: grid;
+}
+
+.blogs-news-container{
+  background-color: var(--gris-claro);
+  padding: 0px 50px 40px;
+}
+.blogs-main-new{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr ;
+}
+.blogs-news-img-container{
+  grid-column: 1;
+}
+.blogs-news-img-container img{
+
+}
+
+.blogs-news-info-container{
+  grid-column: 2;
+}
+
+.blog-news-info-container p{.
+  margin-bottom: 35px;
 }
