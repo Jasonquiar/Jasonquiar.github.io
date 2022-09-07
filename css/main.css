@@ -61,6 +61,10 @@ header .header-icons-container .icons{
   margin-right: 50px;
 }
 
+
+.social_media{
+  background: url(/assets/img/logotipo-de-github.png);
+}
 header .icons span{
   color: white;
   font-size: 2rem;
