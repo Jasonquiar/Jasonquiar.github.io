@@ -1,5 +1,5 @@
 # Jason Arias
-## @Jasonquiar
+
 ### Aquí me presento 
 
 
@@ -13,6 +13,7 @@ El **yoga** me ha ayudado a dar este nuevo paso y la practica me da a entender e
 
 
 
-> Me puedes encontrar en cualquier red como **@jasonquiar** >
+> Me puedes encontrar en cualquier red como:
+## @Jasonquiar
 
 [Visita mi pagina personal😊](https://jasonquiar.github.io/)
