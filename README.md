@@ -8,9 +8,9 @@ El **yoga** me ha ayudado a dar este nuevo paso, la practica constante me da a e
 
 Divido mi vida entonces en tres proyectos:
 
-* Ampliar el conocimiento en pogramación para cumplir mi meta como developer
-* [El gourmet de la mami😊](http://www.elgourmetdelamami.co/) como mi blog personal de tip´s de cocina y las recetas que creo y comparto
-* El Yoga como filosofia de crecimiento, bienestar y movimiento
+* 💻Ampliar el conocimiento en pogramación para cumplir mi meta como developer
+* 👨‍🍳[El gourmet de la mami](http://www.elgourmetdelamami.co/) como mi blog personal con tip´s, recomendaciones y las recetas que implemento y comparto
+* 🧘‍♂️El Yoga como filosofia de crecimiento, bienestar y movimiento
 
 
 > Me puedes encontrar en cualquier red como:
