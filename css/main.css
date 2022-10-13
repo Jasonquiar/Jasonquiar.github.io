@@ -12,10 +12,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
-html{
+body{
   font-family: 'Roboto Mono',monospace;
   font-size: 62.5%;
 }
@@ -47,25 +46,22 @@ header{
 
 header .header-icons-container{
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: grid;
   background-color:var(--color-principal);
+  justify-content: space-around;
+  
 }
 header .header-icons-container .icons{
-  width: 300px;
+  width: 340px;
   height: auto;
   display: flex;
-  justify-items: flex-end;
+  justify-items: center;
   align-items: center;
   justify-content: space-between;
   justify-self: end;
-  margin-right: 50px;
 }
 
-.icon{
- width: 35px;
- height: 35px;
-}
 
 .social_media{
   background: url(/assets/img/logotipo-de-github.png);
@@ -75,38 +71,43 @@ header .icons span{
   font-size: 2rem;
 }
 
+.icon{
+  width: 40px;
+  height: 40px;
+}
+
 nav{
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 90px;
+  align-content: center;
 }
 
 nav .nav-logo-container{
-  margin-left: 50px;
+  margin-left: 4px;
 }
 
 nav .nav-logo-container img{
   width: 220px;
-  margin-top: 10px;
 }
 
 nav .profile-link{
   display: flex;
-  align-items: center;
+  align-items:center;
   font-size: 1rem;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 16px;
 }
 
 nav .profile-link a{
   color: black;
-  border-bottom: 1px solid black ;
+  border-bottom: solid black ;
 }
 
 .home-main{
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  height: 100%;
+  height: 110%;
   width: 100%;
   background-image: url('../assets/img/Cover.png');
   background-position: center;
