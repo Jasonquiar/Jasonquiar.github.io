@@ -9,6 +9,13 @@
     width: 1000px;
     margin: 0 auto;
   }
+
+  .helper-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+  }
   .plans-container--slider {
     justify-content: center;
   }

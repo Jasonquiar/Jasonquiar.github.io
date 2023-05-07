@@ -189,7 +189,7 @@
         width: 100%;
         min-width: 320px;
         height: auto;
-        padding: 20px 12px;
+        padding: 44px 12px;
         background-color: var(--color-white);
     }
 
@@ -219,7 +219,7 @@
         width: 90%;
         min-width: 288px;
         max-width: 400px;
-        height: 210px;
+        height: 250px;
         margin: 15px auto;
         padding: 15px;
         background-color: var(--color-black);
@@ -236,8 +236,6 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-
-  
     .product-detail--card .step {
         display: inline-block;
         width: 40px;
@@ -247,7 +245,6 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        fill:var(--colorContrast-soft)
     }
     .product-detail--card .sun {
         display: inline-block;
@@ -290,10 +287,9 @@
         width: 100%;
         min-width: 320px;
         height: auto;
-        padding: 20px 12px;
+        padding: 44px 12px;
         background-color: var(--just-white);
     }
-
     .helper-detail--title {
         width: 90%;
         min-width: 288px;
@@ -304,93 +300,53 @@
     }
     .helper-detail--title h2 {
         margin-bottom: 20px;
-        font-size: 2.4rem;
+        font-size: 3rem;
         font-weight: bold;
         line-height: 2.6rem;
         color: var(--color-black);
     }
     .helper-detail--title p {
-        margin-bottom: 20px;
-        font-size: 1.4rem;
+        margin-bottom: 44px;
+        font-size: 2rem;
         font-weight: 500;
-        line-height: 1.8rem;
-        color: var(--colorGrey-medium);
+        line-height: 2rem;
+        color: var(--color-black);
     }
     .helper-detail--card {
         width: 90%;
         min-width: 288px;
         max-width: 400px;
-        height: 200px;
+        height: 350px;
         margin: 15px auto;
         padding: 15px;
         background-color: var(--colorGrey-soft);
         box-shadow: -6px 4px 8px var(--colorGrey-medium);
         border-radius: 4px;
+        text-align: center;
     }
-    .helper-detail--card .clock {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/clock.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .helper-detail--card .eye {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/eye.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .helper-detail--card .dollar {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/dollar-sign.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .helper-detail--card .check {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/check-circle.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+
+    .helper-cards--container img{
+        margin: 24px 0px 24px;
     }
     .helper--card_title {
         margin-bottom: 16px;
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: bold;
-        line-height: 1.8rem;
+        line-height: 2rem;
         color: var(--color-black);
         text-decoration: none;
     }
-
     .helper--card_title a{
         text-decoration: none;
         color: var(--color-black);
+        margin: 0px 0px 12px 0px;
     }
-
-    
     .helper--card_body {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.8rem;
         color: var(--colorGrey-medium);
+        margin: 0px 0px 12px 0px;
     }
 
 
