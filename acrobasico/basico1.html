@@ -3,41 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acro Básico Principiante 1</title>
+    <title>AcroBásico Reto 1</title>
+
+    <!-- agregamos la tipografia fuente -->
+    <link 
+      rel="preconnect" 
+      href="https://fonts.googleapis.com">
+    <link 
+      rel="preconnect" 
+      href="https://fonts.gstatic.com" 
+      crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+      rel="stylesheet"/>
+
+    <!-- agregamos los estilos para la tableta y general -->
+    <link rel="stylesheet" href="../css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;900&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="./css/tablet.css"
+      href="../css/tablet.css"
       media="(min-width: 1024px)"
     />
   </head>
   <body>
+
     <header>
-      <img src="./assets/img/logo.svg" alt="Logo de Batatabit" />
-      <div class="header--title-container">
-        <h1>Let´ Play Ultimate </h1>
-        <h2>Una App que te ayuda con tus Torneos y Eventos de Ultimate</h2>
-        <p>
-          Nuestro Proximo torneo:
-         </p>
-         <h2>Guerreros del Viento</h2>
-        <a href="#plans" class="header--button"
-          >Inscribeté Ahora <span></span
-        ></a>
+      
+      <div class="header--container">
+        <!-- Logo correspondiente -->
+        <img src="../assets/img/identidad-de-marca/Logo-silueta-acrobasica.svg" alt="Logo Acrobásico" /> 
+        
+        <div class="header--conteiner-info">
+          <!-- Copy mostrando la información -->
+          <h1>AcroBasico</h1>
+          <h2>Tenemos una secuencia para principiantes de acro yoga que sabemos puedes realizar. </h2>
+          <h3>Inicia el 21 de Junio</h3>
+        </div>
+        
+        <!-- Boton para suscribir al formulario -->
+        <a href="#plans" class="header--button">Inscribeté Ahora <span></span></a>
       </div>
     </header>
+    
     <main>
       <section class="main-exchange-container">
         <div class="backgroundImg"></div>
         <div class="main-exchange-container--title">
-          <h2>Caracteristicas del Torneo.</h2>
+          <h2>Está es la secuencia que queremos enseñarte</h2>
+          
+          <div class="video-responsive">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/fhnrrLxQEVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
           <p>
-            Traemos información en tiempo real de las casas de cambio y las
-            monedas más importantes del mundo.
+            Sabemos que puedes lograrlo en tan solo  en 4 semana
           </p>
         </div>
         <div class="main-tables-container">
@@ -188,6 +206,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <section class="left">
         <ul>
@@ -200,5 +219,6 @@
         <img src="./assets/img/logo-footer.svg" alt="Logo Batatabit 2020" />
       </section>
     </footer>
+
   </body>
 </html>
