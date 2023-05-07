@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
       rel="stylesheet"/>
 
     <!-- agregamos los estilos para la tableta y general -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link
       rel="stylesheet"
       href="../css/tablet.css"
@@ -28,6 +28,13 @@
   <body>
 
     <header>
+      <nav class="nav" class="">
+        <img class="nav__item--1 item" src="https://img.icons8.com/android/96/000000/menu.png"/>
+        <p class="nav__item--2 item">Taller AcroBásico</p>
+        <img class="nav__item--3 item" src="https://img.icons8.com/material/96/000000/like--v1.png"/>
+        <img class="nav__item--4 item" src="https://img.icons8.com/android/96/000000/search.png"/>
+        <img class="nav__item--5 item" src="https://img.icons8.com/material-rounded/96/000000/menu-2.png"/>
+      </nav>
       
       <div class="header--container">
         <!-- Logo correspondiente -->
@@ -44,12 +51,12 @@
     </header>
     
     <main>
+      <!-- Acá esta el video de youtube con un iframe -->
       <section class="main--video-container">
-        <!-- <div class="backgroundImg"></div> -->
           <div class="main--video-container--title">
             <h2>Está es la secuencia que queremos enseñarte</h2>
             
-            <!-- Acá ponemos el enlace del vidio del canal de youtube -->
+            <!-- Acá ponemos el enlace del video -->
             <div class="main--video-responsive">
               <iframe 
                 class="video-responsive-src"
@@ -69,7 +76,8 @@
             </p>
           </div>
       </section>
-
+      
+      <!-- Colocamos los detalles de como se va a realizar el evento -->
       <section class="main--product-detail">
          <div class="product-detail--title">
           <h2>Así proponemos las sesiones</h2>
@@ -110,7 +118,8 @@
           </article>
         </div>
       </section>
-    
+      
+      <!-- Ponemos las tarjetas con la información de los Helpers -->
       <section class="main--helper-detail">
         
         <!-- Información y titulo -->
@@ -166,62 +175,65 @@
         </div>
       </section>
 
+      <!-- Estos son los precios que se van a manejar -->
       <section id="plans" class="main-plans-container">
         <h2>Escoge el plan que mejor se ajuste a ti.</h2>
         <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+        
         <div class="plans-container--slider">
+          
           <div class="plans-container--card">
             <div class="plan-card">
-              <h3 class="plan-card--title">Plan 1</h3>
-              <p class="plan-card--price"><span>$</span> 95.000</p>
+              <h3 class="plan-card--title">1 Persona</h3>
+              <p class="plan-card--price"><span>$</span> 50</p>
               <p class="plan-card--saving">
                 *Campamento desde 
                 <br> Jueves en la noche 
                 <br>e inscripción a la  competencias.
             </p>
-              <button class="plan-card--ca">Mas Información <span></span></button>
+              <button class="plan-card--ca">Esgoge esté<span></span></button>
             </div>
           </div>
+
           <div class="plans-container--card">
             <p class="recommended">Recomendado</p>
             <div class="plan-card">
-              <h3 class="plan-card--title">Plan 2</h3>
-              <p class="plan-card--price"><span>$</span> 85.000</p>
+              <h3 class="plan-card--title">Toda la experiencia</h3>
+              <p class="plan-card--price"><span>$</span> 160</p>
               <p class="plan-card--saving">
                 *Campamento desde 
                 <br> viernes en la noche 
                 <br>e inscripción a la  competencias.
               </p>
-              <button class="plan-card--ca">Mas Información <span></span></button>
+              <button class="plan-card--ca">Esgoge esté<span></span></button>
             </div>
           </div>
+
           <div class="plans-container--card">
             <div class="plan-card">
-              <h3 class="plan-card--title">Plan 3</h3>
-              <p class="plan-card--price"><span>$</span> 68.000</p>
+              <h3 class="plan-card--title">En pareja</h3>
+              <p class="plan-card--price"><span>$</span> 45</p>
               <p class="plan-card--saving">
                 Zona de camping desde el viernes 
                 <br>y eres expectador del evento
               </p>
-              <button class="plan-card--ca">Mas Información<span></span></button>
+              <button class="plan-card--ca">Esgoge esté<span></span></button>
             </div>
           </div>
+
         </div>
       </section>
     </main>
 
     <footer>
-      <section class="left">
-        <ul>
-          <li><a href="">Lindedin</a></li>
-          <li><a href="">Crunchbase</a></li>
-          <li><a href="">Hackernews</a></li>
-        </ul>
+      <section class="footer-icons-container">
+        <div class="icons">
+          <h3>Visita nuestras redes</h3>
+          <a class="icon" href="https://www.facebook.com/jasonquiar"><img src="./assets/img/redes/Icon_facebook.svg" alt="Icono facebook"></a>
+          <a class="icon" href="https://www.instagram.com/jasonquiar"><img src="./assets/img/redes/Icon_Instagram.svg" alt="Icono Instagram"></a>
+          <a class="icon" href="https://www.youtube.com/channel/UCeM2PMNH9i9Sf_6e193CM5g"><img src="./assets/img/redes/Icon_Youtube.svg" alt="Icono Youtube"></a>
+        </div>
       </section>
-      <section class="right">
-        <img src="./assets/img/logo-footer.svg" alt="Logo Batatabit 2020" />
-      </section>
-    </footer>
 
   </body>
 </html>
