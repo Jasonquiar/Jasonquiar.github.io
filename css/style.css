@@ -3,25 +3,30 @@
         /* Colors */
 
         /* Primarios */
-        --colorPrimary-high:011638;
+        --colorPrimary-high:#011638;
+        --colorPrimary-medium:#0A2552;
+        --colorPrimary-soft:#18376B;    
 
+        /* secundary */
+        --colorSecundary-high:#873D48;
+        --colorSecundary-medium:#A15863;
+        --colorSecunday-soft:#BA7983;
+
+        /* Tertiary */
+        --colortTertiary-high:#F9DC5C;
+        --color-Tertiary-medium:#FFE678;
+        --colorTertiary-soft:#FFEB91;
 
         /* contraste */
         --colorContrast-soft:#5EFFDF;
         --colorContrast-medium:#40FFD9;
         --colorContrast-high:#23F0C7;
-
-
-        --bitcoin-orange: #f7931a;
-        --soft-orange: #ffe9d5;
-        --secondary-blue: #1a9af7;
-        --soft-blue: #e7f5ff;
-        --warm-black: #282623;
         
         /* neutros */
-        --color-black: #1F1F1F;
-        --color-white: #F2F2F2;
         --just-white: #fff;
+        --color-white: #F2F2F2;
+        --just-black:#000;
+        --color-black: #1F1F1F;
         
         /* Grises */
         --colorGrey-soft:#D7D7D7;
@@ -183,14 +188,14 @@
     } */
 
 
-/* Detalles del evento */
-    .main-product-detail {
+/* Principal - Detalles del evento */
+    .main--product-detail {
         position: relative;
         width: 100%;
         min-width: 320px;
         height: auto;
         padding: 20px 12px;
-        background-color: var(--black);
+        background-color: var(--just-black);
     }
 
     .product-detail--title {
@@ -213,7 +218,7 @@
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 1.8rem;
-        color: #808080;
+        color:var(--color-white);
     }
     .product-detail--card {
         width: 90%;
@@ -222,9 +227,9 @@
         height: 200px;
         margin: 15px auto;
         padding: 15px;
-        background-color: var(--warm-black);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-        border-radius: 4px;
+        background-color: var(--color-black);
+        box-shadow: -6px 4px 8px var(--colorGrey-medium);
+        border-radius: 6px;
     }
     .product-detail--card .clock {
         display: inline-block;
@@ -281,8 +286,125 @@
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 1.8rem;
-        color: #808080;
+        color:var(--colorGrey-soft);
     }
+
+/* Principal - Introducción de personas que trabajan */
+
+    .main--helper-detail {
+        position: relative;
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        padding: 20px 12px;
+        background-color: var(--just-white);
+    }
+
+    .helper-detail--title {
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 12px;
+        text-align: center;
+    }
+    .helper-detail--title h2 {
+        margin-bottom: 20px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: var(--color-black);
+    }
+    .helper-detail--title p {
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: var(--colorGrey-medium);
+    }
+    .helper-detail--card {
+        width: 90%;
+        min-width: 288px;
+        max-width: 400px;
+        height: 200px;
+        margin: 15px auto;
+        padding: 15px;
+        background-color: var(--colorGrey-soft);
+        box-shadow: -6px 4px 8px var(--colorGrey-medium);
+        border-radius: 4px;
+    }
+    .helper-detail--card .clock {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-image: url("../assets/icons/clock.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .helper-detail--card .eye {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-image: url("../assets/icons/eye.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .helper-detail--card .dollar {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-image: url("../assets/icons/dollar-sign.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .helper-detail--card .check {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-image: url("../assets/icons/check-circle.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .helper--card_title {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        color: var(--color-black);
+    }
+    .helper--card_body {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: var(--colorGrey-medium);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
 /* Plan de pagos */
 .bitcoin-img-container {
