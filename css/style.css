@@ -46,6 +46,10 @@
         font-size: 62.5%;
         font-family: 'Montserrat', sans-serif;
     }
+    a{ 
+        text-decoration: none;
+        
+    }
 
 /* Cabezera */
     header {        
@@ -72,32 +76,27 @@
         font-weight: bold;
     }
     .header--container h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 500;
         margin:24px 0px 24px 0px;
         text-align: center;
     }
     .header--container h3{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         color:var(--colorContrast-high)
     }
 
     .header--button {
-        /* display: block;
-        left: calc(50% - 118px);
-        top: 270px; */
         margin-top: 32px;
         padding: 12px;
         width: 190px;
-
         background: var(--color-black);
         /* Sombra  */
-        box-shadow: 0px 4px 8px var(--color-black);
+        box-shadow: -2px 4px 8px var(--color-black);
         border: none;
         border-radius: 8px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: bold;
-        text-decoration: none;
         color: var(--color-white);
         align-self: center;
     }
@@ -141,11 +140,11 @@
         color:var(--color-white)
     }
     .main--video-container h2 {
-        margin: 12px 0px 32px 0px;
-        font-size: 2.4rem;
+        margin: 12px 0px 40px 0px;
+        font-size: 3rem;
         font-weight: bold;
         line-height: 2.6rem;
-        color: var(--black);
+        color: var(--color-white);
     }
 
     /* Con esta clase hacemos que los videos que se pongan en un ifreme sean Responsive Design */
@@ -164,8 +163,8 @@
         height: 100%;
     }
     .main--video-container p {
-        margin:24px 0px 44px 0px;
-        font-size: 1.6rem;
+        margin:32px 0px 44px 0px;
+        font-size: 2rem;
         /* font-weight: 500;
         line-height: 1.8rem; */
         color: var(--colorGrey-medium);
@@ -195,7 +194,7 @@
         min-width: 320px;
         height: auto;
         padding: 20px 12px;
-        background-color: var(--just-black);
+        background-color: var(--color-white);
     }
 
     .product-detail--title {
@@ -208,17 +207,17 @@
     }
     .product-detail--title h2 {
         margin-bottom: 20px;
-        font-size: 2.4rem;
+        font-size: 3rem;
         font-weight: bold;
         line-height: 2.6rem;
-        color: var(--just-white);
+        color: var(--color-black);
     }
     .product-detail--title p {
         margin-bottom: 20px;
-        font-size: 1.4rem;
+        font-size: 2rem;
         font-weight: 500;
-        line-height: 1.8rem;
-        color:var(--color-white);
+        line-height: 2rem;
+        color:var(--color-black);
     }
     .product-detail--card {
         width: 90%;
@@ -378,12 +377,14 @@
         background-repeat: no-repeat;
     }
     .helper--card_title {
-        margin-bottom: 15px;
+        margin-bottom: 16px;
         font-size: 1.8rem;
         font-weight: bold;
         line-height: 1.8rem;
         color: var(--color-black);
     }
+
+    
     .helper--card_body {
         font-size: 1.4rem;
         font-weight: 500;
@@ -407,23 +408,23 @@
 
 
 /* Plan de pagos */
-.bitcoin-img-container {
-width: 100%;
-min-width: 320px;
-height: 50vh;
-background-image: url("../assets/img/bitcoinbaby2x.jpg");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-text-align: center;
-}
-.bitcoin-img-container h2 {
-padding-top: 60px;
-font-size: 2.4rem;
-font-weight: bold;
-line-height: 2.6rem;
-color: var(--just-white);
-}
+        /* .bitcoin-img-container {
+        width: 100%;
+        min-width: 320px;
+        height: 50vh;
+        background-image: url("../assets/img/bitcoinbaby2x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        }
+        .bitcoin-img-container h2 {
+        padding-top: 60px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: var(--just-white);
+        } */
 .main-plans-container {
 width: 100%;
 min-height: 320px;
@@ -535,7 +536,6 @@ list-style: none;
 margin: 10px 0;
 }
 .left a {
-text-decoration: none;
 color: var(--just-white);
 }
   
