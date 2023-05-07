@@ -219,53 +219,52 @@
         width: 90%;
         min-width: 288px;
         max-width: 400px;
-        height: 200px;
+        height: 210px;
         margin: 15px auto;
         padding: 15px;
         background-color: var(--color-black);
         box-shadow: -6px 4px 8px var(--colorGrey-medium);
         border-radius: 6px;
     }
-    .product-detail--card .clock {
+    .product-detail--card .moon {
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/clock.svg");
+        width: 35px;
+        height: 35px;
+        margin: 10px 0 24px 0;
+        background-image: url("../assets/img/icons/moon.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-    .product-detail--card .eye {
+
+  
+    .product-detail--card .step {
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/eye.svg");
+        width: 40px;
+        height: 35px;
+        margin: 10px 0 24px 0;
+        background-image: url("../assets/img/icons/step.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        fill:var(--colorContrast-soft)
+    }
+    .product-detail--card .sun {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: 10px 0 24px 0;
+        background-image: url("../assets/img/icons/sun.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-    .product-detail--card .dollar {
+    .product-detail--card .start {
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/dollar-sign.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .product-detail--card .check {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-image: url("../assets/icons/check-circle.svg");
+        width: 35px;
+        height: 35px;
+        margin: 10px 0 24px 0;
+        background-image: url("../assets/img/icons/start.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
