@@ -50,6 +50,9 @@
         a{ 
             text-decoration: none;
         }
+        ul li{
+          list-style: none;
+        }
 
         .icon img{
             width: 40px;
@@ -157,16 +160,31 @@
     /* Pies de pagina */
         footer{
             width: 100%;
-            height: 140px;
-            /* display: grid;
-            grid-template-rows:1fr 1fr; */
+            height: auto;
+            background-color: var(--color-black);
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            padding: 24px 12px;
+            background: var(--color-black);
         }
-
+        
+        footer h2{ 
+            text-align: center;
+            align-self: center;
+            font-size: 3rem;
+            line-height: 3rem;
+            color: var(--color-white);
+            margin: 16px auto;
+        }
         footer .footer-icons-container{
             width: 100%;
             height: 50px;
-            display: grid;
-            background-color:var(--color-black);
+            margin:12px 0;
+            display: flex;
+            flex-direction: row;
             justify-content: space-around;
             
         }
@@ -180,200 +198,263 @@
             justify-self: end;
         }
 
+        .footer-links{
+            border-top: 2px solid var(--color-white);
+            border-bottom: 2px solid var(--color-white);
+        }
+
+        .footer-link-container{
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin:12px 0;
+        }
+
+        .footer-link-item{
+            display: flex;
+            text-align: center;
+            justify-items: center;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            border-bottom: var(--color-white);
+            
+            color: var(--color-white);
+        }
+
+        .platzi-container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            justify-content: space-around;
+            margin:8px 0;
+        }
+
+        .platzi-tittle {
+            font-size: 2rem;
+            align-items: center;
+            color: var(--color-white);
+        }
+
+        .platzi-img{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            background-image: url("../assets/img/icons/Icon-Platzi-transparencia.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--color-white);
+        }
+
+        .footer-dev-container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50px;
+            margin:8px 0;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer-dev-body{    
+            font-size: 1.2rem;
+            color: var(--color-white);
+        }
+
+
 /* HOME */
-
-    .home-hero{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto; /* Centra horizontalmente el contenido */
-        width: 100%;
-        height: auto;
-        padding: 24px 12px;
-        background:var(--color-black);
-    }
+    /* HERO */
+        .home-hero{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto; /* Centra horizontalmente el contenido */
+            width: 100%;
+            height: auto;
+            padding: 24px 12px;
+            background:var(--color-black);
+        }
+        
+        .home-hero h1{
+            font-size: 4rem;
+            font-weight: 500;
+            font-weight: bold;
+            align-items: center;
+            align-self: center;
+            margin: 32px 0 12px 0px;
+            color: var(--color-white);
+        }
     
-    .home-hero h1{
-        font-size: 4rem;
-        font-weight: 500;
-        font-weight: bold;
-        align-items: center;
-        align-self: center;
-        margin: 32px 0 12px 0px;
-        color: var(--color-white);
-    }
-   
-    .home-hero img{
-        width: 100%;
-        height: 600px;
-        object-fit: none; /* recorta la imagen para que se ajuste al tamaño del contenedor sin deformarla */
-    }
+        .home-hero img{
+            width: 100%;
+            height: 600px;
+            object-fit: none; /* recorta la imagen para que se ajuste al tamaño del contenedor sin deformarla */
+        }
 
-    .home-hero-text{
-        font-size: 2.8rem;
-        font-weight:300;
-        width: 70%;
-        margin: 24px 0px 32px 0px;
-        align-self: center;
-        text-align: center;
-        color: var(--color-white);
-    }
+        .home-hero-text{
+            font-size: 2.8rem;
+            font-weight:300;
+            width: 70%;
+            margin: 24px 0px 32px 0px;
+            align-self: center;
+            text-align: center;
+            color: var(--color-white);
+        }
 
     /* HABILIDADES LABORALES */
-    .home-skills {
-        position: relative;
-        width: 100%;
-        min-width: 320px;
-        height: auto;
-        margin: 0 auto;
-        padding: 44px 12px;
-        background: var(--color-white);
-      }
-      
-      .skills-detail--title {
-        width: 90%;
-        min-width: 288px;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 12px;
-        text-align: center;
-      }
-      
-      .skills-detail--title h2 {
-        margin-bottom: 20px;
-        font-size: 3rem;
-        font-weight: bold;
-        line-height: 2.6rem;
-        color: var(--color-black);
-      }
-      
-      .skills-detail--title p {
-        margin-bottom: 44px;
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 2rem;
-        color: var(--color-black);
-      }
+        .home-skills {
+            position: relative;
+            width: 100%;
+            min-width: 320px;
+            height: auto;
+            margin: 0 auto;
+            padding: 44px 12px;
+            background: var(--color-white);
+        }
+        
+        .skills-detail--title {
+            width: 90%;
+            min-width: 288px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        .skills-detail--title h2 {
+            margin-bottom: 20px;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: var(--color-black);
+        }
+        
+        .skills-detail--title p {
+            margin-bottom: 44px;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 2rem;
+            color: var(--color-black);
+        }
 
-      .main--skills {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      
-      
-      .skill-detail--card {
-        position: relative;
-        overflow: hidden;
-        width: 320px;
-        height: 550px;
-        border-radius: 12px;
-        z-index: 2;
-        min-width: 288px;
-        max-width: 400px;
-        margin: 12px 0;
-        padding: 12px;
-        box-shadow: -6px 4px 8px var(--colorGrey-medium);
-        text-align: center;
-      }
-      
-      .skill-card-image1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        max-width: 320px;
-        background-image: url(../assets/img/home/jason-cruzado-de-manos-y-pues.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 12px;
-        z-index: 1;
-      }
+        .main--skills {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        
+        .skill-detail--card {
+            position: relative;
+            overflow: hidden;
+            width: 340px;
+            height: 550px;
+            border-radius: 12px;
+            z-index: 2;
+            min-width: 288px;
+            max-width: 400px;
+            margin: 12px 0;
+            padding: 12px;
+            box-shadow: -6px 4px 8px var(--colorGrey-medium);
+            text-align: center;
+        }
+        
+        .skill-card-image1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 340px;
+            background-image: url(../assets/img/home/jason-cruzado-de-manos-y-pues.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+            z-index: 1;
+        }
 
-      .skill-card-image2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        max-width: 320px;
-        background-image: url(../assets/img/home/Sencilla-cuadrada.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 12px;
-        z-index: 1;
-      }
+        .skill-card-image2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 340px;
+            background-image: url(../assets/img/home/Sencilla-cuadrada.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+            z-index: 1;
+        }
 
-      .skill-card-image3 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        max-width: 320px;
-        background-image: url(../assets/img/home/Programación-y-diseño.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 12px;
-        z-index: 1;
-      }
-      
-      
-      .skill-card-content {
-        position: absolute;
-        padding: 20px;
-        width: 320px;
-        height: 35%;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 0px 0px 12px 12px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 2;
-      }
-      
-      .skill--card_title {
-        margin-bottom: 16px;
-        font-size: 2rem;
-        line-height: 2rem;
-        font-weight: bold;
-        text-align: left;
-        color: var(--color-white);
-      }
-      
-      .skill--card_body {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        font-weight: 200;
-        letter-spacing: 0.3rem;
-        height: 75px;
-        color: var(--color-white);
-        margin-bottom: 16px;
-        text-align: left;
-      }
-      
-      .skill--card_link {
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 2rem;
-        transition: color 0.3s ease-in-out;
-        text-decoration: none;
-        color: var(--colorContrast-soft);
-      }
-      
-      .skill--card_link:hover {
-        color: var(--color-white);
-      }
-      
-
-
-      
-
-
-
+        .skill-card-image3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 340px;
+            background-image: url(../assets/img/home/Programación-y-diseño.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+            z-index: 1;
+        }
+        
+        
+        .skill-card-content {
+            position: absolute;
+            padding: 20px;
+            width: 340px;
+            height: 35%;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 0px 0px 12px 12px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+        
+        .skill--card_title {
+            margin-bottom: 16px;
+            font-size: 2rem;
+            line-height: 2rem;
+            font-weight: bold;
+            text-align: left;
+            color: var(--color-white);
+        }
+        
+        .skill--card_body {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-weight: 200;
+            letter-spacing: 0.3rem;
+            height: 75px;
+            color: var(--color-white);
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        
+        .skill--card_link {
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 2rem;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            color: var(--colorContrast-soft);
+        }
+        
+        .skill--card_link:hover {
+            color: var(--color-white);
+        }
+   
 /* ACROBASICO */
         /* Principal Video*/
             main {
