@@ -259,23 +259,31 @@
     }
     
     .skill-detail--card{
+
         display: flex;
         align-items: flex-end;
         position: relative;
         width: 100%;
-        height: 0;
+        height: 450px;
         padding-bottom: 56.25%; /* Ratio 16:9 para la imagen */
         overflow: hidden;
         border-radius: 12px;
-        
+        position: relative;
+        z-index: 2;
     }
     .skill-card-content {
-        z-index: 2;
         padding: 20px;
-        width: 70%;
+        width: 100%;
+        height: 180px;
         max-width: 500px;
         background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 0px 0px 12px 12px ;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        z-index: 2;
     }
     .skill-card-image{
         position: absolute;
@@ -283,15 +291,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../assets/img/jason-cruzado-de\ manos-y-pues.jpg");
+        background-image: url("../assets/img/jason-cruzado-de-manos-y-pues.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 12px;
         z-index: 1;
     }
-
-    
 
     .skill--card_title {
         margin-bottom: 16px;
