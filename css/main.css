@@ -197,14 +197,14 @@
         font-weight: 500;
         font-weight: bold;
         align-items: center;
-        color: var(--color-white);
         align-self: center;
-        margin: 44px 0 12px 0px;
+        margin: 32px 0 12px 0px;
+        color: var(--color-white);
     }
    
     .home-hero img{
         width: 100%;
-        height: 800px;
+        height: 600px;
         object-fit: none; /* recorta la imagen para que se ajuste al tamaño del contenedor sin deformarla */
     }
 
@@ -212,7 +212,7 @@
         font-size: 2.8rem;
         font-weight:300;
         width: 70%;
-        margin: 24px 0px 24px 0px;
+        margin: 24px 0px 32px 0px;
         align-self: center;
         text-align: center;
         color: var(--color-white);
@@ -276,20 +276,51 @@
         text-align: center;
       }
       
-      .skill-card-image {
+      .skill-card-image1 {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         max-width: 320px;
-        background-image: url(../assets/img/jason-cruzado-de-manos-y-pues.jpg);
+        background-image: url(../assets/img/home/jason-cruzado-de-manos-y-pues.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 12px;
         z-index: 1;
       }
+
+      .skill-card-image2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 320px;
+        background-image: url(../assets/img/home/Sencilla-cuadrada.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        z-index: 1;
+      }
+
+      .skill-card-image3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 320px;
+        background-image: url(../assets/img/home/Programación-y-diseño.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        z-index: 1;
+      }
+      
       
       .skill-card-content {
         position: absolute;
@@ -307,36 +338,34 @@
       .skill--card_title {
         margin-bottom: 16px;
         font-size: 2rem;
-        font-weight: bold;
         line-height: 2rem;
-        color: var(--color-black);
-        text-decoration: none;
-      }
-      
-      .skill--card_title a {
-        text-decoration: none;
-        color: var(--color-black);
-        margin: 0 4px;
+        font-weight: bold;
+        text-align: left;
+        color: var(--color-white);
       }
       
       .skill--card_body {
-        font-size: 1.6rem;
-        line-height: 1.6rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 0.3rem;
+        height: 75px;
         color: var(--color-white);
-        margin-bottom: 24px;
+        margin-bottom: 16px;
+        text-align: left;
       }
       
       .skill--card_link {
-        text-decoration: none;
-        color: var(--color-secondary);
-        font-size: 1.4rem;
+        font-size: 2rem;
         font-weight: bold;
-        line-height: 1.4rem;
+        line-height: 2rem;
         transition: color 0.3s ease-in-out;
+        text-decoration: none;
+        color: var(--colorContrast-soft);
       }
       
       .skill--card_link:hover {
-        color: var(--color-primary);
+        color: var(--color-white);
       }
       
 
