@@ -645,21 +645,28 @@
                 color: var(--color-black);
             }
             .helper-detail--card {
+                display: flex;
+                flex-direction: column;
                 width: 90%;
-                min-width: 288px;
-                max-width: 400px;
+                height: 220px;
+                min-width: 240px;
+                max-width: 340px;
                 height: 350px;
                 margin: 15px auto;
                 padding: 15px;
+                align-content: space-between;
                 background-color: var(--colorGrey-soft);
                 box-shadow: -6px 4px 8px var(--colorGrey-medium);
                 border-radius: 4px;
                 text-align: center;
+                align-items: center;
+                justify-content: center;
             }
 
             .helper-cards--container img{
                 width: 40%;
                 height: 40%;
+                margin: 12px 0;
             }
             .helper--card_title {
                 margin-bottom: 16px;
@@ -670,6 +677,7 @@
                 text-decoration: none;
             }
             .helper--card_title a{
+                font-size: 2.8rem;
                 text-decoration: none;
                 color: var(--color-black);
                 margin: 0px 0px 12px 0px;
