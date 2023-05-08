@@ -212,19 +212,18 @@
         color: var(--color-white);
     }
 
-    .hero-home p{
-
-    }
-
-    .main--skill-detail {
-        position: relative;
+    .home-skills{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
         width: 100%;
-        min-width: 320px;
         height: auto;
-        padding: 44px 12px;
-        background-color: var(--just-white);
+        padding: 24px 12px;
+        background: var(--color-white);
     }
-    .skill-detail--title {
+
+    /* titulo y presentacion */
+    .skills-detail--title {
         width: 90%;
         min-width: 288px;
         height: auto;
@@ -232,32 +231,67 @@
         margin-top: 12px;
         text-align: center;
     }
-    .skill-detail--title h2 {
+    .skills-detail--title h2 {
         margin-bottom: 20px;
         font-size: 3rem;
         font-weight: bold;
         line-height: 2.6rem;
         color: var(--color-black);
     }
-    .skill-detail--title p {
+    .skills-detail--title p {
         margin-bottom: 44px;
         font-size: 2rem;
         font-weight: 500;
         line-height: 2rem;
         color: var(--color-black);
     }
-    .skill-detail--card {
-        width: 90%;
-        min-width: 288px;
-        max-width: 400px;
-        height: 350px;
-        margin: 15px auto;
-        padding: 15px;
-        background-color: var(--colorGrey-soft);
-        box-shadow: -6px 4px 8px var(--colorGrey-medium);
-        border-radius: 4px;
-        text-align: center;
+    
+    .main--skill-detail {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        position: relative;
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        padding: 44px 12px;
+        
     }
+    
+    .skill-detail--card{
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Ratio 16:9 para la imagen */
+        overflow: hidden;
+        border-radius: 12px;
+        
+        
+    }
+    .skill-card-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('assets/img/jason-cruzado-de-manos-y-pues.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+    }
+
+    .skill-card-content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        width: 70%;
+        max-width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 0px 0px 12px 12px ;
+    }
+    
 
     .skill--card_title {
         margin-bottom: 16px;
@@ -278,6 +312,13 @@
         line-height: 1.8rem;
         color: var(--colorGrey-medium);
         margin: 0px 0px 12px 0px;
+        text-align: left;
+    }
+    .skill--card_link{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
     }
 
     
