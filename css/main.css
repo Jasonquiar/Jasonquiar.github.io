@@ -789,10 +789,14 @@
                 min-width: 300px;
                 max-width: 300px;
                 height: auto;
-                margin: 20px 12px;
+                margin: 20px 16px;
                 background-color: var(--just-white);
                 border-radius: 15px;
                 box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+            }
+
+            .plans-container--card:nth-child(2) {
+                scroll-snap-align: start;
             }
             .plans-container--card .recommended {
                 position: absolute;
@@ -893,9 +897,6 @@
 
             }
 
-            /* .plans-container--card .recommended {
-                left: calc(40% - 81px);
-            } */
     }
           
        
