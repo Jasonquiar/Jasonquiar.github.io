@@ -63,7 +63,7 @@
             display: grid;
             grid-template-columns: repeat(8, 1fr);
             grid-gap: 10px;
-            height: 60px;
+            height: 70px;
             width: auto;
         }
 
@@ -72,9 +72,15 @@
             justify-self: center;
         }
 
-        .nav__item--1 { grid-column: 1; }
+        .nav__item--1 { 
+            grid-column: 1; 
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
 
-        .nav__item--2 { grid-column: span 2; }
+        }
+
+        .nav__item--2 { grid-column: span 6; }
 
         .nav__item--3 { grid-column: 6; }
 
@@ -128,6 +134,12 @@
             color:var(--colorContrast-high)
         }
 
+        .header--container p{
+            font-size: 1.8rem;
+            font-weight: 600;
+            color:var(--colorSecundary-medium)
+        }
+
         .header--button {
             margin-top: 32px;
             padding: 12px;
@@ -176,23 +188,43 @@
             color: var(--color-white);
             margin: 16px auto;
         }
-        footer .footer-icons-container{
-            width: 100%;
+        .footer-event{
+            width: 70%;
             height: 50px;
             margin:12px 0;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            
+            justify-content: space-between;
+            align-self: center;
+            font-size: 1.8rem;
+            color: var(--color-white);  
+            justify-items: center;
+            align-items: center;
         }
-        footer .footer-icons-container .icons{
+      
+        .footer-icons-container .icons{
             width: 340px;
             height: auto;
             display: flex;
-            justify-items: center;
-            align-items: center;
+            width: 40px;
+            width: 40px;
             justify-content: space-between;
-            justify-self: end;
+            color:var(--color-white);
+        }
+
+        footer-icons-container img{
+            width: 40px;
+            width: 40px;
+            margin: 0 12px;
+          }
+     
+        .footer-event h3{ 
+            text-align: left;
+            font-size: 1.2rem;
+            
+            color: var(--color-white);
+            align-self:flex-start;
+            justify-content: center;
         }
 
         .footer-links{
@@ -221,7 +253,7 @@
             
             color: var(--color-white);
         }
-
+/* Platzi */
         .platzi-container{
             display: flex;
             flex-direction: row;
@@ -264,22 +296,24 @@
             color: var(--color-white);
         }
 
-        /* WhatsApp Estatico */
+    /* WhatsApp Estatico */
         .whatsapp-container {
-            text-align: center;
             position: fixed;
-            width: 74px;
-            height: 74px;
-            bottom: 400px;
-            right: 20px;
+            text-align: center;
+            width: 54px;
+            height: 54px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 999;
             border-radius: 50%;
             background-color: var(--colorContrast-high);
+            border: 3 solid var(--color-black);
         }
 
         .whatsapp-container img{
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             /* margin:0 0 1px 10px; */
         }
         .whatsapp-container a{
@@ -480,7 +514,7 @@
         }
    
 /* ACROBASICO */
-        /* Principal Video*/
+        /* VIDEO */
             main {
                 width: 100%;
                 height: auto;
@@ -536,7 +570,7 @@
                 color: var(--color-white);
             }
 
-        /* Principal - Detalles del evento */
+        /* DETALLES DE EVENTO */
             .main--product-detail {
                 position: relative;
                 width: 100%;
@@ -633,7 +667,7 @@
                 color:var(--colorGrey-soft);
             }
 
-        /* Principal - Introducción de personas que trabajan */
+        /*HELPERS */
 
             .main--helper-detail {
                 position: relative;
@@ -678,7 +712,7 @@
                 align-content: space-between;
                 background-color: var(--colorGrey-soft);
                 box-shadow: -6px 4px 8px var(--colorGrey-medium);
-                border-radius: 4px;
+                border-radius: 32px;
                 text-align: center;
                 align-items: center;
                 justify-content: center;
@@ -710,116 +744,159 @@
                 color: var(--colorGrey-medium);
                 margin: 0px 0px 12px 0px;
             }
+        /* PLAN DE PAGO */
+            .main-plans-container {
+                position: relative;
+                width: 100%;
+                min-width: 400px;
+                height: auto;
+                padding: 44px 12px;
+                min-height: 320px;
+                text-align: center;
+            }
+            .main-plans-container h2 {
+                margin-bottom: 20px;
+                font-size: 3rem;
+                font-weight: 300;
+                font-weight: bold;
+                line-height: 2.6rem;
+                color: var(--color-white);
+            }
+            .main-plans-container p {
+                margin-bottom: 24px;
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 1.8rem;
+                color:var(--colorGrey-medium);
+            }
+            
+            /* Se hace el contendor para poder hacer scroll lateral */
+            .plans-container--slider {
+                display: flex;
+                height: 400px;
+                overflow-x: scroll;
+                overscroll-behavior-x: contain;
+                scroll-snap-type: x proximity;
+            }
 
-        .main-plans-container {
-        width: 100%;
-        min-height: 320px;
-        padding-bottom: 70px;
-        text-align: center;
-        }
-        .main-plans-container h2 {
-        padding-top: 50px;
-        font-size: 2.4rem;
-        font-weight: bold;
-        line-height: 2.6rem;
-        color: var(--black);
-        }
-        .main-plans-container p {
-        padding-top: 30px;
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 1.8rem;
-        color: #757575;
-        }
-        .plans-container--slider {
-        display: flex;
-        /* gap: 50px; Aun no está soportado por todos los navegadores :( */
-        height: 316px;
-        overflow-x: scroll;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x proximity;
-        }
-        .plans-container--card {
-        position: relative;
-        scroll-snap-align: center;
-        width: 70%;
-        min-width: 230px;
-        max-width: 300px;
-        height: 250px;
-        margin: 50px 30px 0;
-        padding: 0 15px;
-        background-color: var(--just-white);
-        border-radius: 15px;
-        box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-        }
-        .plans-container--card .recommended {
-        position: absolute;
-        width: 120px;
-        height: 31px;
-        left: calc(50% - 60px);
-        top: -15px;
-        margin: 0;
-        padding: 6px;
-        background-color: var(--bitcoin-orange);
-        border-radius: 8px;
-        color: var(--just-white);
-        }
-        .plan-card--title {
-        padding-top: 30px;
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 1.8rem;
-        color: black;
-        }
-        .plans-container--card .plan-card--price {
-        padding: 5px 0;
-        font-size: 5.3rem;
-        font-weight: bold;
-        line-height: 6.3rem;
-        color: black;
-        }
-        .plans-container--card .plan-card--saving {
-        padding-top: 0;
-        }
-        .plan-card--ca {
-        width: 151px;
-        height: 48px;
-        margin-top: 20px;
-        background: var(--off-white);
-        border: 2px solid var(--bitcoin-orange);
-        border-radius: 4px;
-        font-size: 1.4rem;
-        font-weight: bold;
-        line-height: 1.8rem;
-        color: var(--black);
-        }
-        .plan-card--ca span {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-image: url("../assets/icons/orange-right-arrow.svg");
-        vertical-align: text-bottom;
-        }
+            .plan.card{
+                display: flex;
+            }
+            .plans-container--card {
+                position: relative;
+                scroll-snap-align: center;
+                width: 70%;
+                min-width: 300px;
+                max-width: 300px;
+                height: auto;
+                margin: 20px 12px;
+                background-color: var(--just-white);
+                border-radius: 15px;
+                box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+            }
+            .plans-container--card .recommended {
+                position: absolute;
+                font-size: 2rem;
+                width: 75%;
+                height: auto;
+                left: calc(40% - 81px);
+                top: -20px;
+                padding: 12px;
+                background-color: var(--colorSecundary-medium);
+                border-radius: 8px;
+                color: var(--just-white);
+            }
+
+           
+            .plan-card--title {
+                height: 100px;
+                padding: 32px 0;
+                font-size: 3rem;
+                font-weight: bold;
+                line-height: 3rem;
+                color: var(--color-black);
+            }
+            .plan-card--title1 {
+                height: 100px;
+                padding: 50px 0;
+                font-size: 3rem;
+                font-weight: bold;
+                line-height: 3rem;
+                color: var(--color-black);
+            }
+
+
+            .plan-card--title h3 {
+                align-self: center;
+                justify-self: center;
+            }
+            
+            .plan-container-precio{
+                display:flex;
+                justify-content: center;
+
+            }
+
+            .plans-container--card .plan-card--price {
+            padding: 5px 0;
+            font-size: 8rem;
+            font-weight: bold;
+            line-height: 6.3rem;
+            color: black;
+            }
+            .plans-container--card .plan-card--saving {
+            padding-top: 0;
+            }
+            .plan-card--ca {
+                width: 151px;
+                height: 48px;
+                margin-top: 20px;
+                background: var(--off-white);
+                border: 2px solid var(--color-black);
+                border-radius: 12px;
+                font-size: 1.4rem;
+                font-weight: bold;
+                line-height: 1.8rem;
+                color: var(--black);
+            }
+            .plan-card--ca span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url("../assets/img/icons/right-row.svg");
+                vertical-align: text-bottom;
+            }
 
         /* FAQ */
 
 
     /* Establecemos el breakpoint en 1000px */ 
     @media only screen and (max-width: 1000px) {
-    /* Aquí va el CSS que queremos aplicar para pantallas móviles */
-        
-        .main--skills {
-            flex-direction: column;
+
+        /* Aquí va el CSS que queremos aplicar para pantallas móviles */
+            
+            .main--skills {
+                flex-direction: column;
             }
-        }
+    
+            .footer-links{
+                width: 90%;
+                align-self: center;
+            }
+    
+            .footer-dev-container{
+                width: 50%;
+                align-self: center;
+            }
+            .footer-event{
+                width: 100%;
 
-        .footer-links{
-            width: 90%;
-            align-self: center;
-        }
+            }
 
-        .footer-dev-container{
-            width: 70%;
-            align-self: center;
-        }
+            /* .plans-container--card .recommended {
+                left: calc(40% - 81px);
+            } */
+    }
+          
+       
     

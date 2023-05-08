@@ -29,19 +29,20 @@
 
     <header>
       <nav class="nav" class="">
-        <img class="nav__item--1 item" src="https://img.icons8.com/android/96/000000/menu.png"/>
-        <p class="nav__item--2 item">Taller AcroBásico</p>
+        <img class="nav__item--1 item" src="../assets/img/identidad-de-marca/Logo-silueta-acrobasica.svg" alt="Logo Acrobásico"/>
+        <p class="nav__item--2 item">La danza de la Ballena 🐳</p>
         <img class="nav__item--5 item" src="https://img.icons8.com/material-rounded/96/000000/menu-2.png"/>
       </nav>
       
       <div class="header--container">
         <!-- Logo correspondiente -->
-        <img src="../assets/img/identidad-de-marca/Logo-silueta-acrobasica.svg" alt="Logo Acrobásico" /> 
+        <!-- <img src="../assets/img/identidad-de-marca/Logo-silueta-acrobasica.svg" alt="Logo Acrobásico" />  -->
                 
         <!-- Copy mostrando la información -->
-        <h1>AcroBasico</h1>
+        <h1>AcroBásico</h1>
         <h2>Tenemos un taller para principiantes de acro yoga que sabemos puedes realizar. </h2>
         <h3>Inicia el 21 de Junio</h3>
+        <p>Cupos limitados</p>
                 
         <!-- Boton para suscribir al formulario -->
         <a href="#plans" class="header--button">Inscribeté Ahora <span></span></a>
@@ -182,14 +183,16 @@
           
           <div class="plans-container--card">
             <div class="plan-card">
-              <h3 class="plan-card--title">1 Persona</h3>
-              <p class="plan-card--price"><span>$</span> 50</p>
+              <h3 class="plan-card--title1">1 Persona</h3>
+              <div class="plan-container-precio">
+                <p class="Plan.card-money">$</p>
+                <p class="plan-card--price">45</p>
+              </div>
+              <span>Mil pesos Colombianos</span>
               <p class="plan-card--saving">
-                *Campamento desde 
-                <br> Jueves en la noche 
-                <br>e inscripción a la  competencias.
+                *Valor por persona una sola sesión.
             </p>
-              <button class="plan-card--ca">Esgoge esté<span></span></button>
+              <button class="plan-card--ca">Esgoge esté</button>
             </div>
           </div>
 
@@ -197,25 +200,30 @@
             <p class="recommended">Recomendado</p>
             <div class="plan-card">
               <h3 class="plan-card--title">Toda la experiencia</h3>
-              <p class="plan-card--price"><span>$</span> 160</p>
+              <div class="plan-container-precio">
+                <p class="plan.card-money">$</p>
+                <p class="plan-card--price">160</p>
+              </div>
+              <span>Mil pesos Colombianos</span>
               <p class="plan-card--saving">
-                *Campamento desde 
-                <br> viernes en la noche 
-                <br>e inscripción a la  competencias.
+                *Valor por persona todas las sesiónes.
               </p>
-              <button class="plan-card--ca">Esgoge esté<span></span></button>
+              <button class="plan-card--ca">Esgoge esté</button>
             </div>
           </div>
 
           <div class="plans-container--card">
             <div class="plan-card">
-              <h3 class="plan-card--title">En pareja</h3>
-              <p class="plan-card--price"><span>$</span> 45</p>
+              <h3 class="plan-card--title1">En pareja</h3>
+              <div class="plan-container-precio" class="recommended-price">
+                <p class="Plan.card-money">$</p>
+                <p class="plan-card--price">45</p>
+              </div>
+              <span>Mil pesos Colombianos</span>
               <p class="plan-card--saving">
-                Zona de camping desde el viernes 
-                <br>y eres expectador del evento
+                *Valor por persona si viene pareja por una sola sesión.
               </p>
-              <button class="plan-card--ca">Esgoge esté<span></span></button>
+              <button class="plan-card--ca">Esgoge esté</button>
             </div>
           </div>
 
@@ -228,9 +236,18 @@
 
 
     <footer>
-      <section class="footer-icons-container">
-        <div class="icons">
+      <!-- WhatsApp fijado en la pantalla -->
+      <div class="whatsapp-container">
+        <a href="https://wa.me/xxxxxxxxxx" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+          <img src="/assets/img/redes/Icon_Whatsapp.svg" alt="WhatsApp Icon" width="150px" height="150px">
+        </a>
+      </div>
+
+      <section class="footer-event">
+        <div >
           <h3>Visita nuestras redes</h3>
+        </div class="icons" >
+        <div class="footer-icons-container">
           <a class="icon" href="https://www.facebook.com/acrobasico"><img src="../assets/img/redes/Icon_facebook.svg" alt="Icono facebook"></a>
           <a class="icon" href="https://www.instagram.com/acrobasico"><img src="../assets/img/redes/Icon_Instagram.svg" alt="Icono Instagram"></a>
           <a class="icon" href="https://www.youtube.com/@acrobasico"><img src="../assets/img/redes/Icon_Youtube.svg" alt="Icono Youtube"></a>
