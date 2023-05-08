@@ -46,20 +46,17 @@
             font-size: 62.5%;
             font-family: 'Montserrat', sans-serif;
         }
-        
         a{ 
             text-decoration: none;
         }
         ul li{
           list-style: none;
         }
-
         .icon img{
             width: 40px;
             height: 40px;
         }
-
-
+    
     /* Navegador */
         .nav {
             background-color:var(--color-white);
@@ -265,6 +262,30 @@
         .footer-dev-body{    
             font-size: 1rem;
             color: var(--color-white);
+        }
+
+        /* WhatsApp Estatico */
+        .whatsapp-container {
+            text-align: center;
+            position: fixed;
+            width: 74px;
+            height: 74px;
+            bottom: 400px;
+            right: 20px;
+            z-index: 999;
+            border-radius: 50%;
+            background-color: var(--colorContrast-high);
+        }
+
+        .whatsapp-container img{
+            width: 70px;
+            height: 70px;
+            /* margin:0 0 1px 10px; */
+        }
+        .whatsapp-container a{
+            align-self: center;
+            width: 70px;
+            height: 70px;
         }
 
 
