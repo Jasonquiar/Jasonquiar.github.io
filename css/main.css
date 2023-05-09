@@ -234,6 +234,9 @@
             border-top: 2px solid var(--color-white);
             border-bottom: 2px solid var(--color-white);
         }
+        .footer-links a{
+            color:(--color-white);
+        }
 
         .footer-link-container{
             width: 100%;
@@ -243,6 +246,10 @@
             flex-direction: row;
             justify-content: space-around;
             margin:12px 0;
+            
+        }
+        .footer-link-container a{   
+            color: var(--color-white);
         }
 
         .footer-link-item{
@@ -251,8 +258,6 @@
             justify-items: center;
             font-size: 1.8rem;
             line-height: 2rem;
-            border-bottom: var(--color-white);
-            
             color: var(--color-white);
         }
 /* Platzi */
