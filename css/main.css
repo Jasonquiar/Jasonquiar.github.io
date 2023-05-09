@@ -82,9 +82,8 @@
         }
 
         .nav__item--2 { grid-column: span 3; 
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             font-weight: 500;
-            font-size: 1.6rem;
             font-weight: 700;
         }
 
@@ -545,158 +544,166 @@
         }
    
 /* ACROBASICO */
-        /* VIDEO */
-            main {
-                width: 100%;
-                height: auto;
-                background-color: var(--color-black);
-            }
-            .main--video-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: auto;
-                padding:24px 12px;
-                text-align: center;
-            }
-            .main--video-container--title {
-                width: 95%;
-                min-width: 300px;
-                max-width: 900px;
-                margin: auto 0;
-                font-size: 2rem;
-                font-weight: bold;
-                color:var(--color-white)
-            }
-            .main--video-container h2 {
-                margin: 12px 0px 40px 0px;
-                font-size: 3rem;
-                font-weight: bold;
-                line-height: 2.6rem;
-                color: var(--color-white);
-            }
+    /* VIDEO */
+        main {
+            width: 100%;
+            height: auto;
+            background-color: var(--color-black);
+        }
+        .main--video-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding:24px 12px;
+            text-align: center;
+        }
+        .main--video-container--title {
+            width: 95%;
+            min-width: 300px;
+            max-width: 900px;
+            margin: auto 0;
+            font-size: 2rem;
+            font-weight: bold;
+            color:var(--color-white)
+        }
+        
+        .main--video-container h2 {
+            margin: 12px 0px 40px 0px;
+            font-size: 3.5rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: var(--color-white);
+        }
+        .main--video-container h3 {
+            margin: 12px 0px 40px 0px;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: var(--colorSecunday-soft);
+        }
 
-            /* Con esta clase hacemos que los videos que se pongan en un ifreme sean Responsive Design */
-                .main--video-responsive {
-                position: relative;
-                padding-bottom: 56.25% ; /* 56.25% establece la proporción 16:9 */
-            }
-            .video-responsive-src {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 100%;
-                height: 100%;
-            }
-            .main--video-container p {
-                margin:32px 0px 44px 0px;
-                font-size: 2rem;
-                color: var(--colorGrey-medium);
-            }
-            .main--video-container p strong{
-                color: var(--color-white);
-            }
+        /* Con esta clase hacemos que los videos que se pongan en un ifreme sean Responsive Design */
+        .main--video-responsive {
+            position: relative;
+            padding-bottom: 56.25% ; /* 56.25% establece la proporción 16:9 */
+        }
+        .video-responsive-src {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .main--video-container p {
+            margin:32px 0px 44px 0px;
+            font-size: 2rem;
+            color: var(--colorGrey-medium);
+        }
+        .main--video-container p strong{
+            color: var(--color-white);
+        }
 
-        /* DETALLES DE EVENTO */
-            .main--product-detail {
-                position: relative;
-                width: 100%;
-                min-width: 320px;
-                height: auto;
-                padding: 44px 12px;
-                background-color: var(--color-white);
-            }
+    /* DETALLES DE EVENTO */
+        .main--product-detail {
+            position: relative;
+            width: 100%;
+            min-width: 320px;
+            height: auto;
+            padding: 44px 12px;
+            background-color: var(--color-white);
+        }
 
-            .product-detail--title {
-                width: 90%;
-                min-width: 288px;
-                height: auto;
-                margin: 0 auto;
-                margin-top: 12px;
-                text-align: center;
-            }
-            .product-detail--title h2 {
-                margin-bottom: 20px;
-                font-size: 3rem;
-                font-weight: bold;
-                line-height: 2.6rem;
-                color: var(--color-black);
-            }
-            .product-detail--title p {
-                margin-bottom: 20px;
-                font-size: 2rem;
-                font-weight: 500;
-                line-height: 2rem;
-                color:var(--color-black);
-            }
-            .product-detail--card {
-                width: 90%;
-                min-width: 288px;
-                max-width: 400px;
-                height: 250px;
-                margin: 15px auto;
-                padding: 15px;
-                background-color: var(--color-black);
-                box-shadow: -6px 4px 8px var(--colorGrey-medium);
-                border-radius: 6px;
-            }
-            .product-detail--card .moon {
-                display: inline-block;
-                width: 35px;
-                height: 35px;
-                margin: 10px 0 24px 0;
-                background-image: url("../assets/img/icons/moon.svg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .product-detail--card .step {
-                display: inline-block;
-                width: 40px;
-                height: 35px;
-                margin: 10px 0 24px 0;
-                background-image: url("../assets/img/icons/step.svg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .product-detail--card .sun {
-                display: inline-block;
-                width: 35px;
-                height: 35px;
-                margin: 10px 0 24px 0;
-                background-image: url("../assets/img/icons/sun.svg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .product-detail--card .start {
-                display: inline-block;
-                width: 35px;
-                height: 35px;
-                margin: 10px 0 24px 0;
-                background-image: url("../assets/img/icons/start.svg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .product--card_title {
-                margin-bottom: 15px;
-                font-size: 1.8rem;
-                font-weight: bold;
-                line-height: 1.8rem;
-                color: var(--just-white);
-            }
-            .product--card_body {
-                font-size: 1.4rem;
-                font-weight: 500;
-                line-height: 1.8rem;
-                color:var(--colorGrey-soft);
-            }
+        .product-detail--title {
+            width: 90%;
+            min-width: 288px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+        }
+        .product-detail--title h2 {
+            margin-bottom: 20px;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: var(--color-black);
+        }
+        .product-detail--title p {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 2rem;
+            color:var(--color-black);
+        }
+        .product-detail--card {
+            width: 90%;
+            min-width: 288px;
+            max-width: 400px;
+            height: 250px;
+            margin: 15px auto;
+            padding: 15px;
+            background-color: var(--color-black);
+            box-shadow: -6px 4px 8px var(--colorGrey-medium);
+            border-radius: 6px;
+        }
+        .product-detail--card .moon {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            margin: 10px 0 24px 0;
+            background-image: url("../assets/img/icons/moon.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .product-detail--card .step {
+            display: inline-block;
+            width: 40px;
+            height: 35px;
+            margin: 10px 0 24px 0;
+            background-image: url("../assets/img/icons/step.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .product-detail--card .sun {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            margin: 10px 0 24px 0;
+            background-image: url("../assets/img/icons/sun.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .product-detail--card .start {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            margin: 10px 0 24px 0;
+            background-image: url("../assets/img/icons/start.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .product--card_title {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 1.8rem;
+            color: var(--just-white);
+        }
+        .product--card_body {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            color:var(--colorGrey-soft);
+        }
 
         /*HELPERS */
 
