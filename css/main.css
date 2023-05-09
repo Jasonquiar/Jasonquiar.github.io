@@ -77,10 +77,11 @@
             border-radius: 50%;
             width: 80px;
             height: 80px;
+            margin: 12px 12px;
 
         }
 
-        .nav__item--2 { grid-column: span 6; 
+        .nav__item--2 { grid-column: span 3; 
             font-size: 1.8rem;
             font-weight: 500;
             font-size: 1.6rem;
@@ -136,7 +137,7 @@
         }
         .header--container img {
             align-self: center;
-            width: 170px;
+            width: 150px;
         }
         .header--container h1 {
             font-size: 4rem;
@@ -236,8 +237,12 @@
             width: 40px;
             width: 40px;
             margin: 0 12px;
-          }
-     
+        }
+        .footer-icons-container .footer-dev-body{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 4px 0px;
+        }
         .footer-event h3{ 
             text-align: left;
             font-size: 1.2rem;
@@ -770,6 +775,62 @@
                 color: var(--colorGrey-medium);
                 margin: 0px 0px 12px 0px;
             }
+        /* MAPA */
+            
+            .map{
+                margin: 12px 16px;
+                min-width:360px;    
+            }           
+
+            .map-info--container{
+                display: flex;
+                position: relative;
+                width: 100%;
+                min-width: 400px;
+                height: auto;
+                min-height: 320px;
+                text-align: center;
+
+            }
+            .map-card{
+                position: relative;
+                width: 100%;
+                min-width: 320px;
+                height: auto;
+                padding: 44px 12px;
+                background-color:var(--color-black)
+            }
+
+            .map-info-title{
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: var(--color-white);
+            }
+            .map-card-subtitle{
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 2rem;
+                margin: 12px 0 12px 0;
+                color: var(--color-white);
+            }
+            
+            .map-card p{    
+                font-size: 1.8rem;
+                margin: 8px auto;
+                color: var(--color-white);
+            }
+            .map-info-body {
+                font-size: 2.8rem;
+                margin: 8px 0 8px 0;
+                color: var(--colorSecundary-medium);
+            }
+           
+           .map-card p .map-card-ubicacion{
+            color: #23F0C7;
+           }
+
+
         /* PLAN DE PAGO */
             .main-plans-container {
                 position: relative;
@@ -866,16 +927,37 @@
                 justify-content: center;
 
             }
+            .plan-card span{
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: var(--colorSecunday-soft);
+            }
+
+            .plan-card-money{
+                font-size: 2rem;
+                font-weight: 700;
+                margin: 10px 4px;
+                color:var(--colorSecunday-soft)
+            }
 
             .plans-container--card .plan-card--price {
-            padding: 5px 0;
-            font-size: 8rem;
-            font-weight: bold;
-            line-height: 6.3rem;
-            color: black;
+                padding: 5px 0;
+                font-size: 8rem;
+                font-weight: bolder;
+                line-height: 7rem;
+                color: var(--color-black);
+                margin: 0;
             }
+
+            .best-price{
+                color:var(--colorSecunday-soft)
+            }
+
+
             .plans-container--card .plan-card--saving {
-            padding-top: 0;
+                padding-top: 10px;
+                font-size: 2rem;
+                margin: 0;
             }
             .plan-card--ca {
                 width: 151px;
@@ -902,10 +984,10 @@
         .FQA-container{
             position: relative;
             width: 100%;
-            min-width: 320px;
+            min-width: 400px;
             height: auto;
             padding: 44px 12px;
-            background-color: var(--just-white);
+            background-color: var(--color-white);
         }
         .container {
             display: flex;
@@ -918,14 +1000,14 @@
         
         .pregunta {
             margin: 10px;
-            max-width: 500px;
-            border: 1px solid gray;
+            max-width: 650px;
+            border: 1px solid var(--colorGrey-high);
             border-radius: 10px;
             padding: 1rem;
         }
         
         .pregunta_encabezado h3 {
-            font-size: 1.5rem;
+            font-size: 2.2rem;
             margin: 0;
             cursor: pointer;
         }
@@ -933,12 +1015,17 @@
         .respuesta {
             height: 0;
             opacity: 0;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--color-black);
         }
         
         .respuesta.activo {
             height: auto;
             opacity: 1;
         }
+
+      
           
 
 
@@ -972,7 +1059,9 @@
 
             }
 
-            
+            .nav__item--2 { 
+                grid-column: span 4;
+            }
             .nav__item--3 { 
                 display: none;
             }
@@ -990,6 +1079,14 @@
                 grid-column: 11; }
                 
             }
+            .map{
+                width: 80%;
+                height: 500px;
+                margin:0;
+            }
+
+            
+            
 
     
           
