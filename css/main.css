@@ -898,6 +898,15 @@
             }
 
         /* FAQ */
+
+        .FQA-container{
+            position: relative;
+            width: 100%;
+            min-width: 320px;
+            height: auto;
+            padding: 44px 12px;
+            background-color: var(--just-white);
+        }
         .container {
             display: flex;
             flex-direction: column;
