@@ -80,7 +80,7 @@
 
         }
 
-        .nav__item--2 { grid-column: span 1; 
+        .nav__item--2 { grid-column: span 6; 
             font-size: 1.8rem;
             font-weight: 500;
             font-size: 1.6rem;
@@ -972,6 +972,7 @@
 
             }
 
+            
             .nav__item--3 { 
                 display: none;
             }
