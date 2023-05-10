@@ -75,9 +75,9 @@
         .nav__item--1 { 
             grid-column: 1; 
             border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            margin: 12px 12px;
+            width: 70px;
+            height: 70px;
+            margin: 8px 12px;
 
         }
 
@@ -88,28 +88,28 @@
         }
 
         .nav__item--3 { 
-            grid-column: 8; 
-            font-size: 1.8rem;
+            grid-column: 9; 
+            font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
         
         .nav__item--4 { 
-            grid-column: 9; 
-            font-size: 1.8rem;
+            grid-column: 10; 
+            font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
         
         .nav__item--5{
-            grid-column: 10;
-            font-size: 1.8rem;
+            grid-column: 11;
+            font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
 
         .nav__item--6 { 
-            grid-column: 11;
+            grid-column: 12;
             display:none; }
             
         img {
@@ -141,6 +141,7 @@
         .header--container h1 {
             font-size: 4rem;
             font-weight: bold;
+            text-align: center;
         }
         .header--container h2 {
             font-size: 2.5rem;
@@ -160,15 +161,14 @@
         }
 
         .header--button {
-            margin-top: 32px;
-            padding: 12px;
-            width: 190px;
+            margin-top: 24px;
+            padding: 20px 30px;
+            width: 260px;
             background: var(--color-black);
-            /* Sombra  */
             box-shadow: -2px 4px 8px var(--color-black);
             border: none;
             border-radius: 8px;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             font-weight: bold;
             color: var(--color-white);
             align-self: center;
@@ -745,7 +745,7 @@
                 min-width: 240px;
                 max-width: 340px;
                 height: 350px;
-                margin: 15px auto;
+                margin: 28px auto;
                 padding: 15px;
                 align-content: space-between;
                 background-color: var(--colorGrey-soft);
@@ -756,6 +756,7 @@
                 justify-content: center;
             }
 
+          
             .helper-cards--container img{
                 width: 40%;
                 height: 40%;
@@ -1067,7 +1068,7 @@
             }
 
             .nav__item--2 { 
-                grid-column: span 4;
+                grid-column: span 3;
             }
             .nav__item--3 { 
                 display: none;
