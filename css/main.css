@@ -59,15 +59,31 @@
     
     /* Navegador */
         .nav {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 24px 44px 24px 12px ;
+        }
+
+        .nav-logo{
+            display:flex;
+            flex-direction: row;
+        }
+        .nav-links{
+            align-self: center;
+            margin: 12px 8px;
+        }
+        /* .nav {
             background-color:var(--color-white);
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-gap: 10px;
             height: 70px;
             width: auto;
-        }
+        } */
 
         .item {
+            margin: 8px 12px;
             align-self: center;
             justify-self: center;
         }
@@ -81,35 +97,36 @@
 
         }
 
-        .nav__item--2 { grid-column: span 3; 
+        .nav__item--2 {
+             /* grid-column: span 3;  */
             font-size: 2.5rem;
             font-weight: 500;
             font-weight: 700;
         }
 
         .nav__item--3 { 
-            grid-column: 9; 
+            /* grid-column: 9;  */
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
         
         .nav__item--4 { 
-            grid-column: 10; 
+            /* grid-column: 10;  */
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
         
         .nav__item--5{
-            grid-column: 11;
+            /* grid-column: 11; */
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
 
         .nav__item--6 { 
-            grid-column: 12;
+            /* grid-column: 12; */
             display:none; }
             
         img {
@@ -1067,9 +1084,9 @@
 
             }
 
-            .nav__item--2 { 
+            /* .nav__item--2 { 
                 grid-column: span 3;
-            }
+            } */
             .nav__item--3 { 
                 display: none;
             }
@@ -1084,19 +1101,9 @@
 
             .nav__item--6 {
                 display:block;
-                grid-column: 11; }
-                
             }
             .map{
                 width: 80%;
                 height: 500px;
                 margin:0;
             }
-
-            
-            
-
-    
-          
-       
-    
