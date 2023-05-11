@@ -591,7 +591,7 @@
             margin: 12px 0px 40px 0px;
             font-size: 3.5rem;
             font-weight: bold;
-            line-height: 2.6rem;
+            line-height: 3.5rem;
             color: var(--color-white);
         }
         .main--video-container h3 {
@@ -635,6 +635,14 @@
             background-color: var(--color-white);
         }
 
+        .main--product-detail h3{
+            margin: 32px 0;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 2rem;
+            text-align: center;
+            color:var(--colorSecunday-soft);
+        }
         .product-detail--title {
             width: 90%;
             min-width: 288px;
@@ -833,13 +841,16 @@
                 color: var(--color-white);
             }
             .map-card-subtitle{
-                font-size: 2rem;
+                font-size: 2.5rem;
                 font-weight: 400;
-                line-height: 2rem;
+                line-height: 2.5rem;
                 margin: 12px 0 12px 0;
                 color: var(--color-white);
             }
             
+            .map-card-ubicacion a{
+                color: var(--colorContrast-soft);
+            }
             .map-card p{    
                 font-size: 1.8rem;
                 margin: 8px auto;
@@ -851,7 +862,7 @@
                 color: var(--colorSecundary-medium);
             }
            
-           .map-card p .map-card-ubicacion{
+           .map-card-ubicacion{
             color: #23F0C7;
            }
 
@@ -867,7 +878,7 @@
                 text-align: center;
             }
             .main-plans-container h2 {
-                margin-bottom: 20px;
+                margin-bottom: 32px;
                 font-size: 3rem;
                 font-weight: 300;
                 font-weight: bold;
@@ -1014,6 +1025,12 @@
             padding: 44px 12px;
             background-color: var(--color-white);
         }
+        .FQA-container h2{
+            text-align: center;
+            font-size: 3rem;
+            columns: var(--color-black);
+            margin: 24px 0px;
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -1105,6 +1122,6 @@
             .map{
                 width: 80%;
                 height: 500px;
-                margin:0;
+                margin: 20px;;
             }
         }
