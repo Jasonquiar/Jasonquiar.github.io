@@ -278,15 +278,9 @@
         }
       
         .footer-link-container{
-            width: 100%;
-            height: 50px;
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin:12px 0;
-            
+            display: none;
         }
+     
         .footer-link-container a{
             align-items: center;   
             color: var(--color-white);
@@ -1144,13 +1138,18 @@
                 width: 100%;
 
             }
+
             .footer-link-container{
-                display: none;
+                width: 100%;
+                height: 50px;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin:12px 0;
             }
 
-            /* .nav__item--2 { 
-                grid-column: span 3;
-            } */
+         
             .nav__item--3 { 
                 display: none;
             }
