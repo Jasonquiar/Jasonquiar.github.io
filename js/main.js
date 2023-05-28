@@ -13,3 +13,7 @@ function removerClaseActivo() {
 	});
 }
 
+const enviarCorreoBtn = document.getElementById("enviarCorreo");
+enviarCorreoBtn.addEventListener("click", function() {
+  window.location.href = "mailto:ejemplo1@mail.com";
+});

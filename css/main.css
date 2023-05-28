@@ -206,10 +206,10 @@
         footer{
             width: 100%;
             height: auto;
-            background-color: var(--color-black);
             display: flex;
             flex-direction: column;
             margin: 0 auto;
+            min-width: 360px;
             width: 100%;
             height: auto;
             padding: 12px 12px;
@@ -239,12 +239,15 @@
         }
         .footer-icons-container{
             align-self: center;
+            min-width: 340px;
+            margin: 0 12px;
         }
         .footer-icons-container .icons{
             width: 340px;
+            margin: 12px 0;
             height: auto;
             display: flex;
-            height: 50px;
+            height: 40px;
             justify-content: space-between;
             color:var(--color-white);
         }
@@ -252,7 +255,6 @@
         footer-icons-container img{
             width: 40px;
             width: 40px;
-            margin: 0 12px;
         }
         .footer-icons-container .footer-dev-body{
             text-align: center;
@@ -274,10 +276,7 @@
             border-top: 2px solid var(--color-white);
             border-bottom: 2px solid var(--color-white);
         }
-        .footer-links a{
-            color:(--color-white);
-        }
-
+      
         .footer-link-container{
             width: 100%;
             height: 50px;
@@ -288,7 +287,8 @@
             margin:12px 0;
             
         }
-        .footer-link-container a{   
+        .footer-link-container a{
+            align-items: center;   
             color: var(--color-white);
         }
 
@@ -300,6 +300,41 @@
             line-height: 2rem;
             color: var(--color-white);
         }
+
+        .footer-mail-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+            margin:12px 0;
+        }
+
+        .footer-mail-item{
+            place-items: center;
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+
+        .footer-mail-item a{
+            color: var(--color-white);
+        }
+        
+        #enviarCorreo {
+            padding: 12px 32px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            background-color: var(--colorSecunday-soft);
+            color: var(--color-white);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #enviarCorreo:hover{
+            color: var(--color-black);
+        }
+
 /* Platzi */
         .platzi-container{
             display: flex;
@@ -384,9 +419,7 @@
         
         .home-hero h1{
             font-size: 4rem;
-            font-weight: 500;
             font-weight: bold;
-            align-items: center;
             align-self: center;
             margin: 32px 0 12px 0px;
             color: var(--color-white);
@@ -408,11 +441,14 @@
             color: var(--color-white);
         }
 
+      
+
+
     /* HABILIDADES LABORALES */
         .home-skills {
             position: relative;
             width: 100%;
-            min-width: 320px;
+            min-width: 360px;
             height: auto;
             margin: 0 auto;
             padding: 44px 12px;
@@ -421,7 +457,7 @@
         
         .skills-detail--title {
             width: 90%;
-            min-width: 288px;
+            min-width: 300px;
             height: auto;
             margin: 0 auto;
             margin-top: 12px;
@@ -429,7 +465,7 @@
         }
         
         .skills-detail--title h2 {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             font-size: 3rem;
             font-weight: bold;
             line-height: 2.6rem;
@@ -437,35 +473,38 @@
         }
         
         .skills-detail--title p {
-            margin-bottom: 44px;
+            margin-bottom: 24px;
             font-size: 2rem;
             font-weight: 500;
             line-height: 2rem;
             color: var(--color-black);
         }
 
+        .skills-detail--title p strong{
+            color: var(--colorSecundary-medium);
+            
+        }
         .main--skills {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            justify-items: center;
             align-items: center;
             margin: 0 auto;
         }
         
-        
+    
         .skill-detail--card {
             position: relative;
             overflow: hidden;
-            width: 340px;
             height: 550px;
             border-radius: 12px;
             z-index: 2;
-            min-width: 288px;
-            max-width: 400px;
+            min-width: 320px;
+            max-width: 550px;
             margin: 12px 0;
-            padding: 12px;
+            padding: 0px 12px;
             box-shadow: -6px 4px 8px var(--colorGrey-medium);
-            text-align: center;
         }
         
         .skill-card-image1 {
@@ -474,7 +513,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            max-width: 340px;
+            max-width: 320px;
             background-image: url(../assets/img/home/Programación-y-diseño.jpg);
             background-size: cover;
             background-position: center;
@@ -489,7 +528,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            max-width: 340px;
+            max-width: 320px;
             background-image: url(../assets/img/home//jason-cruzado-de-manos-y-pues.jpg);
             background-size: cover;
             background-position: center;
@@ -504,7 +543,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            max-width: 340px;
+            max-width: 320px;
             background-image: url(../assets/img/home/Sencilla-cuadrada.png);
             background-size: cover;
             background-position: center;
@@ -517,7 +556,7 @@
         .skill-card-content {
             position: absolute;
             padding: 20px;
-            width: 340px;
+            width: 320px;
             height: 37%;
             background-color: rgba(0, 0, 0, 0.7);
             border-radius: 0px 0px 12px 12px;
@@ -540,23 +579,28 @@
             font-size: 1.5rem;
             line-height: 1.5rem;
             font-weight: 200;
-            letter-spacing: 0.3rem;
-            height: 75px;
+            letter-spacing: 0.4rem;
+            height: 90px;
             color: var(--color-white);
             margin-bottom: 16px;
             text-align: left;
         }
         
         .skill--card_link {
+            justify-self: right;
+            width: auto;
+            min-width: 280px;
             font-size: 2rem;
             font-weight: bold;
             line-height: 2rem;
             transition: color 0.3s ease-in-out;
-            text-decoration: none;
-            color: var(--colorContrast-soft);
+            text-align: right;
+        }
+        .skill--card_link a{
+            color: var(--colortTertiary-high);
         }
         
-        .skill--card_link:hover {
+        .skill--card_link a:hover {
             color: var(--color-white);
         }
    
@@ -1090,7 +1134,7 @@
                 width: 90%;
                 align-self: center;
             }
-    
+
             .footer-dev-container{
                 width: 100%;
                 align-self: center;
@@ -1099,6 +1143,9 @@
             .footer-event{
                 width: 100%;
 
+            }
+            .footer-link-container{
+                display: none;
             }
 
             /* .nav__item--2 { 
