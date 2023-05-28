@@ -15,5 +15,7 @@ function removerClaseActivo() {
 
 const enviarCorreoBtn = document.getElementById("enviarCorreo");
 enviarCorreoBtn.addEventListener("click", function() {
-  window.location.href = "mailto:ejemplo1@mail.com";
+	const asunto = encodeURIComponent("Contacto a Jasonquiar desde su pagina de Github");
+	const destinatario = "jasonquiar@hotmail.com";
+	window.location.href = `mailto:${destinatario}?subject=${asunto}`;
 });
