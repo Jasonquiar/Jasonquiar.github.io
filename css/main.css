@@ -163,7 +163,7 @@
         .header--container h2 {
             font-size: 2.5rem;
             font-weight: 500;
-            margin:24px 0px 24px 0px;
+            margin:24px 12px;
             text-align: center;
         }
         .header--container h3{
@@ -588,14 +588,14 @@
         }
         
         .main--video-container h2 {
-            margin: 12px 0px 40px 0px;
+            margin: 0px 0px 40px 0px;
             font-size: 3.5rem;
             font-weight: bold;
             line-height: 3.5rem;
             color: var(--color-white);
         }
         .main--video-container h3 {
-            margin: 12px 0px 40px 0px;
+            margin: 18px 0px 40px 0px;
             font-size: 3rem;
             font-weight: bold;
             line-height: 2.6rem;
