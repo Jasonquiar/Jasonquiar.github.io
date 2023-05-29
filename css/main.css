@@ -62,7 +62,7 @@
             display:flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 24px 44px 24px 12px ;
+            margin: 18px 4px;
         }
 
         .nav-logo{
@@ -71,17 +71,9 @@
         }
         .nav-links{
             align-self: center;
-            margin: 12px 8px;
+            /* margin: 12px 8px; */
         }
-        /* .nav {
-            background-color:var(--color-white);
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-gap: 10px;
-            height: 70px;
-            width: auto;
-        } */
-
+       
         .item {
             margin: 8px 12px;
             align-self: center;
@@ -98,37 +90,56 @@
         }
 
         .nav__item--2 {
-             /* grid-column: span 3;  */
+            vertical-align: middle;
             font-size: 2.5rem;
-            font-weight: 500;
             font-weight: 700;
+            margin: 8px 0;
         }
 
         .nav__item--3 { 
-            /* grid-column: 9;  */
+            vertical-align: middle;
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
         
         .nav__item--4 { 
-            /* grid-column: 10;  */
+            vertical-align: middle;
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
         
         .nav__item--5{
-            /* grid-column: 11; */
+            vertical-align: middle;
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
         }
 
-        .nav__item--6 { 
-            /* grid-column: 12; */
-            display:none; }
-            
+        .nav__item--6 {
+           font-size: 1.5rem;
+           font-weight: bold;
+           color: var(--color-black);
+           padding: 8px 8px;
+           border: var(--color-black) solid 2px;
+           border-radius: 12px;
+           min-width: 81px;
+           margin: 0;
+        }
+
+        .nav__item--6 span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 8px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("../assets/img/Banderas/USA.png");
+            vertical-align: middle;
+        }
+
         img {
             width: 25px;
         }
@@ -450,8 +461,8 @@
         }
         
         .skills-detail--title {
-            width: 90%;
-            min-width: 300px;
+            width: 70%;
+            min-width: 320px;
             height: auto;
             margin: 0 auto;
             margin-top: 12px;
@@ -468,13 +479,14 @@
         
         .skills-detail--title p {
             margin-bottom: 24px;
+            line-height: 2.5rem;
             font-size: 2rem;
             font-weight: 500;
-            line-height: 2rem;
             color: var(--color-black);
         }
 
         .skills-detail--title p strong{
+            font-size: 2.2rem;
             color: var(--colorSecundary-medium);
             
         }
@@ -1120,6 +1132,7 @@
 
         /* Aquí va el CSS que queremos aplicar para pantallas móviles */
             
+        
             .main--skills {
                 flex-direction: column;
             }
@@ -1149,7 +1162,6 @@
                 margin:12px 0;
             }
 
-         
             .nav__item--3 { 
                 display: none;
             }
