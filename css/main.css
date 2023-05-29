@@ -127,7 +127,7 @@
            min-width: 81px;
            margin: 0;
         }
-
+        
         .nav__item--6 span{
             display: inline-block;
             width: 20px;
@@ -139,10 +139,11 @@
             background-image: url("../assets/img/Banderas/USA.png");
             vertical-align: middle;
         }
+       
 
-        img {
+        /* img {
             width: 25px;
-        }
+        } */
 
 
     /* Cabezeras */
