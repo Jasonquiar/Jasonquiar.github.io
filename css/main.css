@@ -118,28 +118,40 @@
         }
 
         .nav__item--6 {
-           font-size: 1.5rem;
+           font-size: 1.4rem;
            font-weight: bold;
            color: var(--color-black);
            padding: 8px 8px;
            border: var(--color-black) solid 2px;
            border-radius: 12px;
-           min-width: 81px;
+           min-width: 65px;
            margin: 0;
+           vertical-align: middle;
         }
         
-        .nav__item--6 span{
+        .nav-espanol{
             display: inline-block;
             width: 20px;
             height: 20px;
-            margin: 0 8px;
+            margin: 0 0 0 8px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-image: url("../assets/img/Banderas/USA.png");
             vertical-align: middle;
         }
-       
+        .nav-english{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 0 0 8px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("../assets/img/Banderas/espana.png");
+            vertical-align: middle;
+        }
+        
 
         /* img {
             width: 25px;
