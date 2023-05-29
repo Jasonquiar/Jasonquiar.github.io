@@ -263,7 +263,6 @@
         }
         .footer-icons-container{
             align-self: center;
-            min-width: 340px;
             margin: 0 12px;
         }
         .footer-icons-container .icons{
@@ -875,14 +874,14 @@
             
             .map{
                 margin: 12px 16px;
-                min-width:360px;    
+                    
             }           
 
             .map-info--container{
                 display: flex;
                 position: relative;
                 width: 100%;
-                min-width: 400px;
+                min-width: 360px;
                 height: auto;
                 min-height: 320px;
                 text-align: center;
@@ -891,7 +890,7 @@
             .map-card{
                 position: relative;
                 width: 100%;
-                min-width: 320px;
+                min-width: 360px;
                 height: auto;
                 padding: 44px 12px;
                 background-color:var(--color-black)
@@ -934,7 +933,7 @@
             .main-plans-container {
                 position: relative;
                 width: 100%;
-                min-width: 400px;
+                min-width: 360px;
                 height: auto;
                 padding: 44px 12px;
                 min-height: 320px;
@@ -1083,7 +1082,7 @@
         .FQA-container{
             position: relative;
             width: 100%;
-            min-width: 400px;
+            min-width: 360px;
             height: auto;
             padding: 44px 12px;
             background-color: var(--color-white);
@@ -1191,7 +1190,7 @@
                 display:block;
             }
             .map{
-                width: 80%;
+                width: 90%;
                 height: 500px;
                 margin: 20px;;
             }
