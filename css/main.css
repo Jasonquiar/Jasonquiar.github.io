@@ -1098,25 +1098,51 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 80%;
+            max-width: 90%;
             margin: auto;
         }
         
-        .pregunta {
-            margin: 10px;
-            max-width: 650px;
+        .preguntas {
+            margin: 12px;
+            min-width: 320px;
+            width: 70%;
             border: 1px solid var(--colorGrey-high);
             border-radius: 10px;
-            padding: 1rem;
+            padding: 12px;
         }
+
+        .pregunta_encabezado {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px 0 0;
+          }
         
         .pregunta_encabezado h3 {
+            max-width: 650px;
             font-size: 2.2rem;
+            padding: 0  12px;
             margin: 0;
             cursor: pointer;
         }
         
+        .arrow-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url("../assets/img/icons/down-arrow-black.svg");
+            background-repeat: no-repeat;
+            background-size:contain;
+            vertical-align: middle;
+          }
+        
+          .arrow-icon.rotate {
+            transform: rotate(180deg);
+          }
+        
         .respuesta {
+            padding: 12px 12px 12px 28px;
             height: 0;
             opacity: 0;
             font-size: 1.8rem;
@@ -1124,6 +1150,10 @@
             color: var(--color-black);
         }
         
+        .respuesta ol{
+            padding: 0 0 0 32px;
+        }
+
         .respuesta.activo {
             height: auto;
             opacity: 1;
@@ -1131,7 +1161,7 @@
 
       
           
-
+      
 
 
 
@@ -1148,7 +1178,13 @@
             .main--skills {
                 flex-direction: column;
             }
-    
+            
+
+            .pregunta_encabezado h3 {
+                max-width: 250px;
+                font-size: 2rem;
+                
+            }
             .footer-links{
                 width: 90%;
                 align-self: center;
