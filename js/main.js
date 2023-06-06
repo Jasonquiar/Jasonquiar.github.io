@@ -1,22 +1,4 @@
-
-
-// const preguntas = document.querySelectorAll(".pregunta_encabezado");
-
-// preguntas.forEach((pregunta) => {
-// 	pregunta.addEventListener("click", () => {
-// 		removerClaseActivo();
-// 		pregunta.nextElementSibling.classList.add("activo");
-// 	});
-// });
-
-// function removerClaseActivo() {
-// 	preguntas.forEach((pregunta) => {
-// 		pregunta.nextElementSibling.classList.remove("activo");
-// 	});
-// }
-
-
-
+// Funcion que nos permite PQR retractil
 
 const preguntas = document.querySelectorAll(".pregunta_encabezado");
 
@@ -48,7 +30,7 @@ function removerClaseActivo() {
 
 
 
-
+// Enviar correo
 const enviarCorreoBtn = document.getElementById("enviarCorreo");
 enviarCorreoBtn.addEventListener("click", function() {
 	const asunto = encodeURIComponent("Contacto a Jasonquiar con el fin de...");
