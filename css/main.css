@@ -1108,7 +1108,7 @@
             width: 70%;
             border: 1px solid var(--colorGrey-high);
             border-radius: 10px;
-            padding: 12px;
+            padding: 16px 12px 12px 12px;
         }
 
         .pregunta_encabezado {
