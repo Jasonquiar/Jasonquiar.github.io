@@ -217,15 +217,9 @@
         }
         
         .header--button:hover{
-            background:var(--color-white);
-            box-shadow: -2px 4px 8px var(--color-black);
-            border: none;
-            border-radius: 8px;
-            font-size: 1.8rem;
-            font-weight: bold;
+            background:var(--colorSecunday-soft);
             color: var(--color-black);
-            text-align: center;
-        }
+         }
      
     
     /* Pies de pagina */
