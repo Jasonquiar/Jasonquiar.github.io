@@ -1059,6 +1059,12 @@
                 line-height: 1.8rem;
                 color: var(--black);
             }
+
+            .plan-card--ca:hover{
+                background: var(--colorSecunday-soft);
+                color: var(--color-white);
+                border: none
+            }
             
 
             .plans-container--card .best-price{
@@ -1069,6 +1075,8 @@
                 margin: 0;
                 color:var(--colorSecunday-soft);
             }
+
+
 
 
         /* FAQ */
