@@ -218,7 +218,7 @@
         
         .header--button:hover{
             background:var(--colorSecunday-soft);
-            color: var(--color-black);
+            color: var(--color-white);
          }
      
     
@@ -1042,20 +1042,14 @@
                 color: var(--color-black);
                 margin: 0;
             }
-
-            .best-price{
-                color:var(--colorSecunday-soft)
-            }
-
-
+          
             .plans-container--card .plan-card--saving {
-                padding-top: 10px;
+                padding: 10px 10px 35px 10px;
                 font-size: 2rem;
                 margin: 0;
             }
             .plan-card--ca {
-                width: 151px;
-                height: 48px;
+                padding: 12px 30px;
                 margin-top: 20px;
                 background: var(--off-white);
                 border: 2px solid var(--color-black);
@@ -1065,13 +1059,17 @@
                 line-height: 1.8rem;
                 color: var(--black);
             }
-            .plan-card--ca span {
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background-image: url("../assets/img/icons/right-row.svg");
-                vertical-align: text-bottom;
+            
+
+            .plans-container--card .best-price{
+                padding: 5px 0;
+                font-size: 8rem;
+                font-weight: bolder;
+                line-height: 7rem;
+                margin: 0;
+                color:var(--colorSecunday-soft);
             }
+
 
         /* FAQ */
 
