@@ -62,7 +62,7 @@
             display:flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 18px 4px;
+            margin: 18px 8px 0px 8pxx;
         }
 
         .nav-logo{
@@ -456,41 +456,6 @@
             color: var(--color-white);
         }
 
-        /* HERO BLOGS   */
-
-        .blogs-hero-movimiento {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 40vh;
-            background-image: url(../assets/img/home/Programación-y-diseño.jpg);
-            background-repeat: none;
-            width: auto;
-            /* object-fit: none; */
-            background-size: cover;
-            background-position: center;
-          }
-          
-        .blogs-hero-content {
-            padding: 24px;
-        }
-          
-        .blogs-hero-title {
-            text-align:right;
-            align-self: center;
-            font-size: 3rem;
-            line-height: 3rem;
-            color: var(--color-white);
-            margin: 16px auto;
-        }
-          
-        .blogs-hero-image {
-            max-width: 25%;
-        }
-          
-
-
-
     /* HABILIDADES LABORALES */
         .home-skills {
             position: relative;
@@ -651,8 +616,210 @@
         .skill--card_link a:hover {
             color: var(--color-white);
         }
-   
-/* ACROBASICO */
+/* BLOGS----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* HERO BLOGS   */
+
+.blog-hero-movimiento {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40vh;
+    background-image: url(../assets/img/home/Programación-y-diseño.jpg);
+    background-repeat: none;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  
+.blogs-hero-content {
+    padding: 24px;
+}
+  
+.blogs-hero-title {
+    text-align:right;
+    align-self: center;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--color-white);
+    margin: 16px auto;
+}
+  
+.blogs-cta-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 24px 12px;
+    background: var(--color-black);
+}
+
+.blog-cta-text{
+    font-size: 2.5rem;
+    font-weight: 200;
+    width: 70%;
+    margin: 24px 0px 32px 0px;
+    align-self: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.blog-cta-button{
+    margin: 24px 0px 60px 0px;
+    padding: 20px 30px;
+    align-self: center;
+    text-align: center;
+    width: 260px;
+    background: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.blog-cta-button:hover{
+   background: var(--colortTertiary-high); 
+   color: var(--color-black);
+}
+
+.blogs-tools-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 60px 12px;
+    background: var(--color-white);
+}
+.blog-tool-tittle{
+    margin: 32px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-black);
+}
+
+.blog-guide{
+    display: none;
+    padding: 24px 0;
+    font-size: 1.8rem;
+}
+
+.blog-container-slider{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    background-color: var(--color-Tertiary-medium);
+    height: 120px;
+}
+.blog-tool{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 50px;
+    width: auto;
+    height: 40px;
+    padding: 24px 12px;
+    margin: auto 12px;
+    align-items: center;    
+}
+
+.blog-tool--text{
+    font-size: 1.8rem;
+    font-weight:300;
+    padding: 0 24px 0 0;
+}
+
+.blog-tool--image{
+    height: 40px;
+    width: 40px;
+}
+
+.blogs-story-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 24px 12px;
+    background: var(--color-white);
+}
+
+.blog-story-tittle{
+    margin: 32px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.6rem;
+    color: var(--color-black);
+}
+
+
+.blog-story-text{
+    font-size: 2.3rem;
+    font-weight: 200;
+    width: 70%;
+    margin: 24px 0px 32px 0px;
+    align-self: center;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.blogs-skills-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 60px 12px;
+    background: var(--color-white);
+}
+.blog-skill-tittle{
+    margin: 32px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-black);
+}
+
+.blog-skill-guide{
+    display: none;
+    padding: 24px 0;
+    font-size: 1.4rem;
+}
+
+
+.blog-skill{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 50px;
+    width: auto;
+    height: 40px;
+    padding: 24px 0;
+    margin: auto 12px;
+    align-items: center;    
+}
+
+.blog-skill--text{
+    width: max-content;
+    font-size: 1.8rem;
+    color: var(--colorPrimary-medium);
+    font-weight:300;
+    padding: 0 32px;
+}
+
+
+
+
+/* ACROBASICO *------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
     /* VIDEO */
         main {
             width: 100%;
@@ -1265,5 +1432,10 @@
                 width: 90%;
                 height: 500px;
                 margin: 20px;;
+            }
+
+           
+            .blog-guide{
+                display: inline;
             }
         }
