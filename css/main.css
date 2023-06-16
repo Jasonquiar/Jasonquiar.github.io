@@ -890,9 +890,6 @@
         .blog-projets-container--cards{
             display: flex;
             flex-direction: row;
-            /* overflow-x: scroll;
-            overscroll-behavior-x: contain;
-            scroll-snap-type: x proximity; */
             justify-content: space-around;
             justify-items: center;
             align-items:flex-start;
@@ -904,7 +901,7 @@
             padding: 28px 0px;
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width: 100%;
             height: auto;
             min-width: 310px;
             max-width: 450px;
