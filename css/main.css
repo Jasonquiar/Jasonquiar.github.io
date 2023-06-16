@@ -659,6 +659,7 @@
             justify-content: flex-end;
             align-items: center;
             height: 40vh;
+            min-width: 360px;
             background-image: url(../assets/img/home/Programación-y-diseño.jpg);
             background-repeat: no-repeat;
             width: auto;
@@ -698,6 +699,7 @@
             flex-direction: column;
             margin: 0 auto;
             width: 100%;
+            min-width: 360px;
             height: auto;
             padding: 24px 12px;
             background: var(--color-black);
@@ -738,6 +740,7 @@
             flex-direction: column;
             text-align: center;
             margin: 0 auto;
+            min-width: 360px;
             width: 100%;
             height: auto;
             padding: 60px 12px;
@@ -790,6 +793,7 @@
             display: flex;
             flex-direction: column;
             margin: 0 auto;
+            min-width: 360px;
             width: 100%;
             height: auto;
             padding: 24px 12px;
@@ -820,6 +824,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+            min-width: 360px;
             margin: 0 auto;
             width: 100%;
             height: auto;
@@ -866,6 +871,7 @@
             flex-direction: column;
             text-align: center;
             margin: 0 auto;
+            min-width: 360px;
             width: 100%;
             height: auto;
             padding: 60px 12px;
@@ -889,22 +895,25 @@
 
         .blog-projets-container--cards{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-around;
+            justify-items: center;
+            align-items:flex-start;
             height: auto;
             margin: 12px 8px;
         }
 
         .blog-projet-card{
-            padding: 28px 12px;
+            padding: 28px 0px;
             display: flex;
             flex-direction: column;
             width: 100%;
             height: auto;
             min-width: 310px;
             max-width: 450px;
-            margin: 16px auto;
+            margin: 16px 24px;
             background-color: var(--color-white);
-            border-radius: 24px;
+            border-radius: 28px;
         }
 
         .blog-projet-card--title{
@@ -919,6 +928,7 @@
             align-self: center;
             height: 50px;
             max-width: 340px;
+            margin-bottom: 16px;
             padding: 0px 24px;
             border-radius: 24px;
             background: var(--colorPrimary-soft);
@@ -933,8 +943,39 @@
 
         .blog-project-card--copy{
             color: var(--color-black);
-            padding: 24px 4px;
+            padding: 16px 24px;
             font-size: 1.8rem;
+        }
+
+        .blog-project-card--copy a{
+            color: var(--colorSecunday-soft);
+            font-size: 2rem;
+            font-weight:bold ;
+        }
+
+        .blog-project--CTA{
+            background-color: var(--colorSecunday-soft);
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            border-radius: 12px;
+            width: 60%;
+            height: 50px;
+            margin: 12px 12px;
+            align-items: center;
+            align-self: center;  
+        }
+
+        .blog-project-CTA--text{
+            font-size: 1.8rem;
+            font-weight:300;
+            padding: 0 24px 0 0;
+            color: var(--color-white);
+        }
+        .blog-project-CTA img{
+            width: 24px;
+            height: 24px;
         }
         
 
@@ -1564,4 +1605,13 @@
             .blog-guide{
                 display: inline;
             }
+
+            .blog-projets-container--cards{
+                flex-direction: column;
+                margin: 12px 8px;
+            }
+            .blog-projet-card{
+                margin: 16px 0px;
+            }
+            
         }
