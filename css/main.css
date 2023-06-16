@@ -78,7 +78,7 @@
             display:flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 18px 8px 0px 8pxx;
+            margin: 18px 18px 0px 32px;
         }
 
         .nav-logo{
@@ -88,7 +88,7 @@
         }
         .nav-links{
             align-self: center;
-            /* margin: 12px 8px; */
+            margin: 12px 8px;
         }
        
         .item {
@@ -119,6 +119,7 @@
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
+            border-radius: 18px;
         }
         
         .nav__item--4 { 
@@ -126,6 +127,7 @@
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
+            border-radius: 18px;
         }
         
         .nav__item--5{
@@ -133,6 +135,7 @@
             font-size: 2.4rem;
             font-weight: 700;
             color: var(--color-black);
+            border-radius: 18px;
         }
 
         .nav__item--6 {
@@ -324,6 +327,7 @@
             justify-items: center;
             font-size: 1.2rem;
             line-height: 2rem;
+            border-radius: 20px;
             color: var(--color-white);
         }
 
@@ -353,8 +357,8 @@
             border: none;
             border-radius: 24px;
             cursor: pointer;
-            background-color: var(--colorSecunday-soft);
-            color: var(--color-white);
+            background-color: var(--color-white);
+            color: var(--color-black);
         }
 
         #enviarCorreo:hover{
@@ -654,31 +658,31 @@
 /* BLOGS----------------------------------------------------------------------------------------------------------------------------------- */
     /* HERO BLOGS   */
         .amarillo{
-            background: var(--color-Tertiary-medium);
+            background: var(--colortTertiary-high);
+            color: var(--color-black);
             box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
             padding: 12px 24px;
-            border-radius: 20px;
+           
         }
+
         .azul{
             background: var(--colorPrimary-soft);
             color: var(--color-white);
             box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
             padding: 12px 24px;
-            border-radius: 20px;
+            
         }
 
         .rojo{
-            background: var(--colorSecunday-soft);
+            background: var(--colorSecundary-medium);
             color: var(--color-white);
             box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
             padding: 12px 24px;
-            border-radius: 20px;
-            
         }
+        
         .blog-name{
             display: flex;
             flex-direction: row;
-            background: var(--color-Tertiary-medium);
             justify-content: space-between;
             align-items: center;
             height: 60px;
@@ -686,16 +690,33 @@
         }
 
         .blog-name h1{
-            color: var(--color-black);
             font-size: 2.2rem;
             display: none;
+            color: var(--color-white);
         }
-        .blog-hero-movimiento {
+
+        .amarillo-opcion{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 50px;
+            background: var(--colortTertiary-high); 
+        }
+
+        .amarillo-opcion h1{
+            font-size: 2.2rem;
+            display: none;
+            color: var(--color-black);
+        }
+       
+        .blog-hero-programacion {
             position: relative; /* Agregamos posición relativa */
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            height: 40vh;
+            height: 60vh;
             min-width: 360px;
             background-image: url(../assets/img/home/Programación-y-diseño.jpg);
             background-repeat: no-repeat;
@@ -704,7 +725,7 @@
             background-position: center;
         }
 
-        .blog-hero-movimiento::before {
+        .blog-hero-programacion::before {
             content: "";
             position: absolute;
             top: 0;
@@ -713,6 +734,56 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
             z-index: 1; /* Colocamos la capa por encima de la imagen */
+        }
+
+        .blog-hero-cocina{
+            position: relative; /* Agregamos posición relativa */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 60vh;
+            min-width: 360px;
+            background-image: url(../assets/img/home/elgourmet-fondo.jpg);
+            background-repeat: no-repeat;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-hero-cocina::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            z-index: 1; /* Colocamos la capa por encima de la imagen */  
+        }
+
+        .blog-hero-movimiento{
+            position: relative; /* Agregamos posición relativa */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 60vh;
+            min-width: 360px;
+            background-image: url(../assets/img/home/movimiento-fondo.jpg);
+            background-repeat: no-repeat;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-hero-movimiento::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            z-index: 1; /* Colocamos la capa por encima de la imagen */  
         }
 
         .blogs-hero-content {
@@ -727,7 +798,7 @@
             font-size: 3rem;
             line-height: 3rem;
             color: var(--color-white);  
-            margin: 16px auto;
+            margin: 16px 60px;
         }
 
     /* CALL TO ACTION */
@@ -797,9 +868,10 @@
             overflow-x: scroll;
             overscroll-behavior-x: contain;
             scroll-snap-type: x proximity;
-            background-color: var(--color-Tertiary-medium);
             height: 120px;
+            color: var(--color-black);
         }
+
         .blog-tool{
             background-color: var(--color-white);
             display: flex;
@@ -896,6 +968,14 @@
             padding: 0 32px;
         }
 
+        .blog-skill--txt{
+            width: max-content;
+            font-size: 2rem;
+            color: var(--color-white);
+            font-weight:300;
+            padding: 0 32px;
+        }
+
     /*PROYECTOS*/
         .blogs-projects-container{
             display: flex;
@@ -940,6 +1020,7 @@
             flex-direction: column;
             width: 100%;
             min-width: 310px;
+            max-width: 500px;
             margin: 16px 24px;
             background-color: var(--color-white);
             border-radius: 28px;
@@ -1633,6 +1714,10 @@
 
             .blog-name h1{
                 display: block;
+            }
+
+            .blogs-hero-title{
+                margin: 16px 12px;
             }
             .blog-projets-container--cards{
                 flex-direction: column;
