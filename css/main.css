@@ -322,7 +322,7 @@
             display: flex;
             text-align: center;
             justify-items: center;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             line-height: 2rem;
             color: var(--color-white);
         }
@@ -347,14 +347,14 @@
         }
         
         #enviarCorreo {
-            padding: 12px 32px;
+            padding: 12px 24px;
             font-weight: bold;
             font-size: 1.5rem;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
             background-color: var(--colorSecunday-soft);
             color: var(--color-white);
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
         }
 
         #enviarCorreo:hover{
@@ -653,6 +653,43 @@
 
 /* BLOGS----------------------------------------------------------------------------------------------------------------------------------- */
     /* HERO BLOGS   */
+        .amarillo{
+            background: var(--color-Tertiary-medium);
+            box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
+            padding: 12px 24px;
+            border-radius: 20px;
+        }
+        .azul{
+            background: var(--colorPrimary-soft);
+            color: var(--color-white);
+            box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
+            padding: 12px 24px;
+            border-radius: 20px;
+        }
+
+        .rojo{
+            background: var(--colorSecunday-soft);
+            color: var(--color-white);
+            box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
+            padding: 12px 24px;
+            border-radius: 20px;
+            
+        }
+        .blog-name{
+            display: flex;
+            flex-direction: row;
+            background: var(--color-Tertiary-medium);
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 50px;
+        }
+
+        .blog-name h1{
+            color: var(--color-black);
+            font-size: 2.2rem;
+            display: none;
+        }
         .blog-hero-movimiento {
             position: relative; /* Agregamos posición relativa */
             display: flex;
@@ -902,9 +939,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: auto;
             min-width: 310px;
-            max-width: 450px;
             margin: 16px 24px;
             background-color: var(--color-white);
             border-radius: 28px;
@@ -1563,15 +1598,18 @@
             }
 
             .footer-link-container{
-                width: 100%;
-                height: 50px;
-                align-items: center;
                 display: flex;
                 flex-direction: row;
+                width: 100%;
+                height: 80px;
+                align-items: center;
                 justify-content: space-around;
-                margin:12px 0;
+                border-bottom: 2px solid var(--color-white);
             }
 
+            .nav{
+                margin: 0 12px;
+            }
             .nav__item--3 { 
                 display: none;
             }
@@ -1593,7 +1631,9 @@
                 margin: 20px;;
             }
 
-           
+            .blog-name h1{
+                display: block;
+            }
             .blog-projets-container--cards{
                 flex-direction: column;
                 margin: 12px 8px;
