@@ -743,7 +743,7 @@
             min-width: 360px;
             width: 100%;
             height: auto;
-            padding: 60px 12px;
+            padding: 40px 12px;
             background: var(--color-white);
         }
         .blog-tool-tittle{
@@ -752,12 +752,6 @@
             font-weight: bold;
             line-height: 2.6rem;
             color: var(--color-black);
-        }
-
-        .blog-guide{
-            display: none;
-            padding: 24px 0;
-            font-size: 1.8rem;
         }
 
         .blog-container-slider{
@@ -828,7 +822,7 @@
             margin: 0 auto;
             width: 100%;
             height: auto;
-            padding: 60px 12px;
+            padding: 40px 12px;
             background: var(--color-white);
         }
         .blog-skill-tittle{
@@ -896,6 +890,9 @@
         .blog-projets-container--cards{
             display: flex;
             flex-direction: row;
+            /* overflow-x: scroll;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x proximity; */
             justify-content: space-around;
             justify-items: center;
             align-items:flex-start;
@@ -907,7 +904,7 @@
             padding: 28px 0px;
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 90%;
             height: auto;
             min-width: 310px;
             max-width: 450px;
@@ -958,7 +955,7 @@
             display: flex;
             flex-direction: row;
             text-align: center;
-            justify-content: center;
+            justify-content:space-evenly;
             border-radius: 12px;
             width: 60%;
             height: 50px;
@@ -970,13 +967,11 @@
         .blog-project-CTA--text{
             font-size: 1.8rem;
             font-weight:300;
-            padding: 0 24px 0 0;
+            padding: 0 12px;
             color: var(--color-white);
         }
-        .blog-project-CTA img{
-            width: 24px;
-            height: 24px;
-        }
+        
+      
         
 
         
@@ -1602,10 +1597,6 @@
             }
 
            
-            .blog-guide{
-                display: inline;
-            }
-
             .blog-projets-container--cards{
                 flex-direction: column;
                 margin: 12px 8px;
