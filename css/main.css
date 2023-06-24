@@ -1006,8 +1006,12 @@
 
         .blog-projets-container--cards{
             display: flex;
+            flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-around;
+            overflow-x: scroll;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x proximity;
+            justify-content: center;
             justify-items: center;
             align-items:flex-start;
             height: auto;
