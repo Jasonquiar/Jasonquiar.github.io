@@ -1012,7 +1012,7 @@
             overscroll-behavior-x: contain;
             scroll-snap-type: x proximity;
             justify-content: center;
-            justify-items: center;
+            justify-items:;
             align-items:flex-start;
             height: auto;
             margin: 12px 8px;
@@ -1726,6 +1726,7 @@
             .blog-projets-container--cards{
                 flex-direction: column;
                 margin: 12px 8px;
+                align-items: center;
             }
             .blog-projet-card{
                 margin: 16px 0px;
