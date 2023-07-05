@@ -78,7 +78,7 @@
             display:flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 18px 18px 0px 32px;
+            margin: 0px 18px 0px 32px;
         }
 
         .nav-logo{
@@ -178,6 +178,7 @@
     
         header {        
             width: 100%;
+            min-width: 360px;
             height: auto;
             background: var(--color-white);
         }
@@ -188,6 +189,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            min-width: 360px;
             height: auto;
             padding: 24px 12px;
         }
@@ -452,6 +454,7 @@
             display: flex;
             flex-direction: column;
             margin: 0 auto; /* Centra horizontalmente el contenido */
+            min-width: 360px;
             width: 100%;
             height: auto;
             padding: 24px 12px;
@@ -658,7 +661,8 @@
 /* BLOGS----------------------------------------------------------------------------------------------------------------------------------- */
     /* HERO BLOGS   */
         .amarillo{
-            background: var(--colortTertiary-high);
+            
+            border-bottom: 3px solid var(--colortTertiary-high);
             color: var(--color-black);
             box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
             padding: 12px 24px;
@@ -666,20 +670,32 @@
         }
 
         .azul{
-            background: var(--colorPrimary-soft);
-            color: var(--color-white);
+            border-bottom: 3px solid var(--colorPrimary-soft);
+            color: var(--color-black);
             box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
             padding: 12px 24px;
             
         }
 
         .rojo{
-            background: var(--colorSecundary-medium);
-            color: var(--color-white);
+            border-bottom: 3px solid var(--colorSecundary-medium);
+            color: var(--color-black);
             box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
             padding: 12px 24px;
         }
+
+        .bloqueAmarillo{
+            background: var(--colortTertiary-high);
+            color: var(--color-black);
+        }
         
+        .bloqueAzul{
+            background: var(--colorPrimary-soft);
+        }
+
+        .bloqueRojo{
+            background: var(--colorSecundary-medium);
+        }
         .blog-name{
             display: flex;
             flex-direction: row;
@@ -687,6 +703,7 @@
             align-items: center;
             height: 60px;
             padding: 0 50px;
+            min-width: 360px;
         }
 
         .blog-name h1{
@@ -971,7 +988,7 @@
         .blog-skill--txt{
             width: max-content;
             font-size: 2rem;
-            color: var(--color-white);
+            color: var(--color-black);
             font-weight:300;
             padding: 0 32px;
         }
