@@ -653,49 +653,43 @@
 
 
 
-
-
-
-
-
 /* BLOGS----------------------------------------------------------------------------------------------------------------------------------- */
     /* HERO BLOGS   */
         .amarillo{
             
             border-bottom: 3px solid var(--colortTertiary-high);
-            color: var(--color-black);
-            box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
+            /* box-shadow: -2px 1.5px 1px var(--colorGrey-soft); */
             padding: 12px 24px;
+         
            
         }
 
         .azul{
             border-bottom: 3px solid var(--colorPrimary-soft);
-            color: var(--color-black);
-            box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
+            /* box-shadow: -2px 1.5px 1px var(--colorGrey-soft); */
             padding: 12px 24px;
-            
         }
 
         .rojo{
             border-bottom: 3px solid var(--colorSecundary-medium);
-            color: var(--color-black);
-            box-shadow: -2px 1.5px 1px var(--colorGrey-soft);
+            /* box-shadow: -2px 1.5px 1px var(--colorGrey-soft); */
             padding: 12px 24px;
         }
 
         .bloqueAmarillo{
             background: var(--colortTertiary-high);
-            color: var(--color-black);
         }
         
         .bloqueAzul{
             background: var(--colorPrimary-soft);
+            color: var(--color-white);
         }
 
         .bloqueRojo{
             background: var(--colorSecundary-medium);
+            color: var(--color-white);
         }
+
         .blog-name{
             display: flex;
             flex-direction: row;
