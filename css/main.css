@@ -211,7 +211,7 @@
         }
         .header--container h3{
             font-size: 1.8rem;
-            color:var(--colorContrast-high)
+            color:var(--colorContrast-high);
         }
 
         .header--container p{
@@ -1397,23 +1397,30 @@
         .map-info-title{
             font-size: 3rem;
             font-weight: 700;
-            margin: 52px 0 20px 0;
+            margin: 52px 0 8px 0;
             color: var(--color-white);
         }
         .map-card-subtitle{
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 400;
-            line-height: 2.5rem;
+            line-height: 3.5rem;
             margin: 12px 0 12px 0;
             color: var(--color-white);
         }
+
+        .map-card-subtitle a {
+            color: var(--colorContrast-soft);
+        }
         
+        /* .map-frame{
+            min-width: 320px;
+        } */
         .map-card-ubicacion a{
             color: var(--colorContrast-soft);
         }
         .map-card p{    
             font-size: 1.8rem;
-            margin: 8px auto;
+            margin: 8px 0px 24px 0px;
             color: var(--color-white);
         }
         .map-info-body {
@@ -1422,9 +1429,7 @@
             color: var(--colorSecundary-medium);
         }
         
-        .map-card-ubicacion{
-        color: #23F0C7;
-        }
+        
 
     /* PLAN DE PAGO */
         .main-plans-container {
