@@ -458,7 +458,7 @@
             display: flex;
             text-align: center;
             justify-items: center;
-            font-size: 1.2rem;
+            font-size: 2rem;
             line-height: 2rem;            
             color: var(--color-white);
         }
