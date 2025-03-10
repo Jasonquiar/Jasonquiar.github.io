@@ -441,25 +441,17 @@
         /* Banner links */
 
         .banner-links{
-            width: 70%;
+            display: none;
             align-self: center;
-        }
-
-        .banner-link-container{
-            display: none;           
-        }
-
-        .banner-link-container a{
-            align-items: center;
-            color: var(--color-white);
         }
 
         .banner-link-item{
             display: flex;
             text-align: center;
             justify-items: center;
-            font-size: 2rem;
-            line-height: 2rem;            
+            font-size: 1.7rem;
+            font-weight: bold;
+            line-height: 2rem;
             color: var(--color-white);
         }
 
@@ -689,7 +681,7 @@
             border-bottom: 3px solid var(--colorPrimary-high);
             padding: 12px 24px;
         }
-       
+
         .azul{
             border-bottom: 3px solid var(--colorPrimary-soft);
             padding: 12px 24px;
@@ -701,21 +693,21 @@
         }
 
         .bloqueAzulOscuro{
-            background: var(--colorPrimary-high);            
+            background: var(--colorPrimary-high);
         }
-        
+
         .bloqueAzul{
-            background: var(--colorPrimary-soft);            
+            background: var(--colorPrimary-soft);
         }
-                
+
         .bloqueRojo{
-            background: var(--colorSecundary-medium);            
+            background: var(--colorSecundary-medium);
         }
-        
+
         .bloqueAzulOscuro p{
             color: var(--just-white);
         }
-        
+
         .bloqueAzul p{
             color: var(--just-white);
         }
@@ -723,7 +715,7 @@
         .bloqueRojo p{
             color: var(--just-white);
         }
-        .blog-tool p{   
+        .blog-tool p{
             color: var(--color-black);
         }
         .blog-name{
@@ -1701,8 +1693,6 @@
 
 /*MEDIA QUERY -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
     /* Establecemos el breakpoint en 1000px */
     @media only screen and (max-width: 1000px) {
 
@@ -1729,18 +1719,20 @@
             .banner-links{
                 display: flex;
                 flex-direction: column;
-                width: 100%;
                 align-self: center;
+                margin: 0 auto;
                 min-width: 360px;
+                width: 100%;
+                height: auto;
+                background: var(--color-black);
             }
 
             .banner-link-container{
-                
+                display: flex;
                 width: 100%;
-                height: 60px;
+                height: 100px;
                 align-items: center;
                 justify-content: space-around;
-                border-bottom: 1.5px solid var(--color-white);
             }
 
             .footer-links{
