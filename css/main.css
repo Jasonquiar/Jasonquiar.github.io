@@ -238,7 +238,7 @@
 
         .header--button:hover{
             background:var(--colorSecunday-soft);
-            color: var(--color-white);
+            color: var (--color-white);
          }
 
 
@@ -531,7 +531,7 @@
             font-size: 3rem;
             font-weight: bold;
             line-height: 2.6rem;
-            color: var(--color-black);
+            color: var (--color-black);
         }
 
         .skills-detail--title p {
@@ -1704,9 +1704,9 @@
 
 
     /* Establecemos el breakpoint en 1000px */
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
 
-        /* Aquí va el CSS que queremos aplicar para pantallas móviles */
+        /* Aquí va el CSS que queremos aplicar para pantallas movile */
 
             .main--skills {
                 flex-direction: column;
@@ -1806,3 +1806,110 @@
             }
 
         }
+
+/* Establecemos el breakpoint en 768px */
+@media only screen and (max-width: 768px) {
+
+  /* Aquí va el CSS que queremos aplicar para pantallas móviles */
+
+  .main--skills {
+    flex-direction: column;
+  }
+
+  .skill-detail--card {
+    transition: transform 0.3s ease;
+  }
+
+  .skill-detail--card:active {
+    transform: scale(1.05);
+  }
+
+  .pregunta_encabezado h3 {
+    max-width: 250px;
+    font-size: 2rem;
+  }
+
+  .banner-links {
+    width: 100%;
+    align-self: center;
+  }
+
+  .banner-link-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1.5px solid var(--color-white);
+  }
+
+  .footer-links {
+    width: 90%;
+    align-self: center;
+  }
+
+  .footer-link-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--color-white);
+  }
+
+  .footer-dev-container {
+    width: 100%;
+    align-self: center;
+    justify-content: space-between;
+  }
+
+  .footer-event {
+    width: 100%;
+  }
+
+  .nav {
+    margin: 0 12px;
+  }
+
+  .nav__item--3 {
+    display: none;
+  }
+
+  .nav__item--4 {
+    display: none;
+  }
+
+  .nav__item--5 {
+    display: none;
+  }
+
+  .nav__item--6 {
+    display: block;
+  }
+
+  .map {
+    width: 90%;
+    height: 500px;
+    margin: 20px;
+  }
+
+  .blog-name h1 {
+    display: block;
+  }
+
+  .blogs-hero-title {
+    margin: 16px 12px;
+  }
+
+  .blog-projets-container--cards {
+    flex-direction: column;
+    margin: 12px 8px;
+    align-items: center;
+  }
+
+  .blog-projet-card {
+    margin: 16px 0px;
+  }
+}
