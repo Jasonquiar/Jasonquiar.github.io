@@ -687,49 +687,51 @@
     /* HERO BLOGS   */
         .AzulOscuro{
             border-bottom: 3px solid var(--colorPrimary-high);
-            /* box-shadow: -2px 1.5px 1px var(--colorGrey-soft); */
             padding: 12px 24px;
         }
        
-
         .azul{
             border-bottom: 3px solid var(--colorPrimary-soft);
-            /* box-shadow: -2px 1.5px 1px var(--colorGrey-soft); */
             padding: 12px 24px;
         }
 
         .rojo{
             border-bottom: 3px solid var(--colorSecundary-medium);
-            /* box-shadow: -2px 1.5px 1px var(--colorGrey-soft); */
             padding: 12px 24px;
         }
 
         .bloqueAzulOscuro{
-            background: var(--colorPrimary-high);
-            color: var(--color-white);
-            
+            background: var(--colorPrimary-high);            
         }
-
+        
+        .bloqueAzul{
+            background: var(--colorPrimary-soft);            
+        }
+                
+        .bloqueRojo{
+            background: var(--colorSecundary-medium);            
+        }
+        
         .bloqueAzulOscuro p{
             color: var(--just-white);
         }
-
-        .bloqueAzul{
-            background: var(--colorPrimary-soft);
-            color: var(--color-white);
+        
+        .bloqueAzul p{
+            color: var(--just-white);
         }
 
-        .bloqueRojo{
-            background: var(--colorSecundary-medium);
-            color: var(--color-white);
+        .bloqueRojo p{
+            color: var(--just-white);
         }
-
+        .blog-tool p{   
+            color: var(--color-black);
+        }
         .blog-name{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            height: 45px;
+            height: 55px;
             padding: 0 50px;
             min-width: 360px;
         }
@@ -1733,7 +1735,7 @@
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                height: 50px;
+                height: 60px;
                 align-items: center;
                 justify-content: space-around;
                 border-bottom: 1.5px solid var(--color-white);
