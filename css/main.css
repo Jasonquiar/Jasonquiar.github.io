@@ -882,53 +882,55 @@
         }
 
     /* SLIDER DE HABILIDADES*/
-        .blogs-tools-container{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            margin: 0 auto;
-            min-width: 360px;
-            width: 100%;
-            height: auto;
-            padding: 40px 12px;
-            background: var(--color-white);
-        }
-        .blog-tool-tittle{
-            margin: 32px;
-            font-size: 3rem;
-            font-weight: bold;
-            line-height: 2.6rem;
-            color: var(--color-black);
-        }
+    .blogs-tools-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        min-width: 360px;
+        width: 100%;
+        height: auto;
+        padding: 40px 12px;
+        background: var(--color-white);
+    }
+    .blog-tool-tittle{
+        margin: 32px;
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: var(--color-black);
+    }
 
-        .blog-container-slider{
-            display: flex;
-            flex-direction: row;
-            overflow-x: scroll;
-            overscroll-behavior-x: contain;
-            scroll-snap-type: x proximity;
-            height: 120px;
-            color: var(--color-black);
-        }
+    .blog-container-slider{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        height: 120px;
+        color: var(--color-black);
+    }
 
-        .blog-tool{
-            background-color: var(--color-white);
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            border-radius: 50px;
-            width: auto;
-            height: 40px;
-            padding: 24px 12px;
-            margin: auto 12px;
-            align-items: center;
-        }
+    
 
-        .blog-tool--text{
-            font-size: 1.8rem;
-            font-weight:300;
-            padding: 0 24px 0 0;
-        }
+    .blog-tool{
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        border-radius: 50px;
+        width: auto;
+        height: 40px;
+        padding: 24px 12px;
+        margin: auto 12px;
+        align-items: center;
+    }
+
+    .blog-tool--text{
+        font-size: 1.8rem;
+        font-weight:300;
+        padding: 0 24px 0 0;
+    }
 
     /*STORY DE LA PAGINA*/
         .blogs-story-container{
